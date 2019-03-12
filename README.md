@@ -1,4 +1,5 @@
 # IoT Computer Vision Networking App
+---
 
 ## What
 
@@ -18,8 +19,8 @@
 
 
 ## Team Members
--Arianna Burch
+- Arianna Burch
 
--Tarek Elkheir
+- Tarek Elkheir
 
--Chris Villamarin
+- Chris Villamarin
