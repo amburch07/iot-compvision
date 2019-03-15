@@ -21,6 +21,7 @@
 * Getting LED Lights to simulate door locking/unlocking
 * Figure out how to dynamically change webpage with server updates (do we need to reload page?)
 
+---------------------------------------------------------
 
 ## Week 2 (3/18 - 3/22)
 
@@ -33,6 +34,7 @@
 ### Any blocking issues/challenges need to be addressed?
 ...
 
+----------------------------------------------------------
 
 ## Week 3 (3/25 - 3/29)
 
@@ -45,6 +47,7 @@
 ### Any blocking issues/challenges need to be addressed?
 ...
 
+----------------------------------------------------------
 
 ## Week 4 (4/1 - 4/5)
 
