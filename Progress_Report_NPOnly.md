@@ -26,13 +26,23 @@
 ## Week 2 (3/18 - 3/22)
 
 ### What did your team do last week?
-...
+* Redesigned network components to reflect plans for web hosting, hardware, and client-server interactions
+* Began work on website design/implementation
+* Began web-server code
+* Setup and configured Raspberry Pi (SSH)
+* Finished sending and receiving images over TCP
+
 
 ### What will you do this week?
-...
+* Continue front-end of website, start on networking back-end
+* Work on pre-processing algorithms
+* Work on computer-vision classification algorithms
+* Work on server code
+* Hookup Raspberry-Pi camera and LEDs
+* Use FTP to to send images from Pi to server
 
 ### Any blocking issues/challenges need to be addressed?
-...
+* We slightly redesigned out networking components to make sure they were a sufficiently large part of our project
 
 ----------------------------------------------------------
 
