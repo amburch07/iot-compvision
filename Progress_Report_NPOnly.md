@@ -49,13 +49,17 @@
 ## Week 3 (3/25 - 3/29)
 
 ### What did your team do last week?
-...
+* Used FTP to send a stream of images between computers
+* Began work on image pre-processing and computer vision algorithms
+* Began work on front-end of website
 
 ### What will you do this week?
-...
+* Finish webcam server, image pre-processing server, and web server
+* Integrate image pre-processing and computer vision code with server code
+* Begin work on back-end of website (Display live images from camera, alert user when person is detected, create database of people allowed to enter)
 
 ### Any blocking issues/challenges need to be addressed?
-...
+* Figure out how to make a web-page dynamic (Be updated with live information/alerts without refreshing)
 
 ----------------------------------------------------------
 
