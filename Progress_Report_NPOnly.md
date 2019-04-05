@@ -66,10 +66,19 @@
 ## Week 4 (4/1 - 4/5)
 
 ### What did your team do last week?
-...
+* Completed preprocessing steps and connected to server
+* Finished classification code except for minimal training and connecting componentess together
+* Raspberry pi LEDs set up and coded to turn them on and off
+* Stored data from classification in json (to send to webpage)
 
 ### What will you do this week?
-...
+* Prepare for presentation
+* Finish server code
+* Finish classification code
+* Send JSON and image to webpage and reload
+* Connect components
+* Comment/document our code
+* Start report
 
 ### Any blocking issues/challenges need to be addressed?
-...
+* HTML/CSS progress got inadvertantly erased, so redoing to have basic GUI/results page on hosted web page
