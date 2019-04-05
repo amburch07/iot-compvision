@@ -13,11 +13,12 @@ def connect_to_server(host, port):
 
 def send_file():
     while True:
-        camera.take_photo()  # Take photo and store it in the /images directory
+        camera.take_dummy_photo()  # Take photo and store it in the /images directory
         image_list = os.listdir('images')
         most_recent = open('images/' + image_list[-1], 'rb')
         ftp.storbinary('STOR ' + most_recent.name[7:], most_recent)
         time.sleep(5)  # Wait five seconds before taking and sending next photo
+
 
 
 if __name__ == "__main__":

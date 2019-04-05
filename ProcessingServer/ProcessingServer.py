@@ -1,9 +1,15 @@
+"""Instantiates an FTP server to receive images, and an HTTP client to send classification data
+
+"""
+
 from pyftpdlib.authorizers import DummyAuthorizer
 from pyftpdlib.handlers import FTPHandler
 from pyftpdlib.servers import FTPServer
 import logging
-import image_processing
-
+import ImagePreprocessing
+import HTTPClient
+import requests
+import json
 
 class ProcessingHandler(FTPHandler):
     def on_connect(self):
@@ -22,8 +28,9 @@ class ProcessingHandler(FTPHandler):
         print("%s has sent %s " % (self.username, file))
 
     def on_file_received(self, file):
+        start_http_client()
         print("Received %s from %s" % (file, self.username))
-        image_processing.process_image(file)
+        ImagePreprocessing.process_image(file)
 
     def on_incomplete_file_received(self, file):
         print("Received incomplete file from %s" % self.username)
@@ -32,14 +39,25 @@ class ProcessingHandler(FTPHandler):
         print("%s Sent incomplete file" % self.username)
 
 
-if __name__ == "__main__":
+def start_ftp():
     authorizer = DummyAuthorizer()
-    authorizer.add_user("webcam", "1234", "./ToProcess", perm="lw")
+    authorizer.add_user("webcam", "1234", "./data_received", perm="lw")
     handler = ProcessingHandler
     handler.authorizer = authorizer
     server = FTPServer(('0.0.0.0', 21), handler)
     logging.basicConfig(filename='./log/pyftpd.log', level=logging.INFO)  # Store FTP server log
     server.serve_forever()
+
+
+def start_http_client():
+    HTTPClient.post_request()
+
+
+
+if __name__ == "__main__":
+    start_ftp()
+
+
 
 
 
