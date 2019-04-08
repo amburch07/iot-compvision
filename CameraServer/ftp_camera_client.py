@@ -18,12 +18,11 @@ def connect_to_server(host, port):
 
 
 def send_file():
-    while True:
-        camera.take_photo()  # Take photo and store it in the /images directory
-        image_list = os.listdir('images')
-        most_recent = open('images/' + image_list[-1], 'rb')
-        ftp.storbinary('STOR ' + most_recent.name[7:], most_recent)
-        time.sleep(5)  # Wait five seconds before taking and sending next photo
+    connect_to_server('localhost', 21)
+    camera.take_photo()  # Take photo and store it in the /images directory
+    image_list = os.listdir('images')
+    most_recent = open('images/' + image_list[-1], 'rb')
+    ftp.storbinary('STOR ' + most_recent.name[7:], most_recent)
 
 
 def close_connection():
@@ -41,12 +40,8 @@ if __name__ == "__main__":
         ftp_send = threading.Thread(target=main(ftp_host, ftp_port))
     except IOError:
         print("Could not connect to FTP server!")
+
     TCPServer.start_server()
-
-
-
-
-
 
 if __name__ == "__main__":
     connect_to_server('localhost', 21)

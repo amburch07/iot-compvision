@@ -16,6 +16,7 @@ import ImagePreprocessing
 import HTTPClient
 import DataStorage
 import ImageMetadata
+import TCP_Client
 import requests
 import json
 
@@ -56,6 +57,7 @@ class ProcessingHandler(FTPHandler):
 
 
 def start_ftp():
+    print("Starting FTP")
     authorizer = DummyAuthorizer()
     authorizer.add_user("webcam", "1234", "./data_received", perm="lw")
     handler = ProcessingHandler
@@ -67,6 +69,9 @@ def start_ftp():
 if __name__ == "__main__":
     ftp_server_thread = threading.Thread(target=start_ftp, args=())
     ftp_server_thread.start()
+
+    tcp_client_thread = threading.Thread(target=TCP_Client.main())
+    tcp_client_thread.start()
 
 
 

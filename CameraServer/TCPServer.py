@@ -1,5 +1,7 @@
 from socket import *
 import sys
+import CameraServer.ftp_camera_client
+
 import cv2
 
 
@@ -17,20 +19,17 @@ def start_server():
             print("Connection: received from client at ", addr)
             while True:
                 message = connection_socket.recv(1024).decode('utf-8')
-                if (len(message) > 0):
-                    print("Message received: " + message)
-                    if message == "{quit}":
-                        print("Quit requested")
-                        connection_socket.close()
-                        break
-                    if message == "{start}":
-                        print("Sending photos")
+
+                print("Received message ", message)
+                if(message=="{start}"):
+                    print("Taking photo")
+
         except IOError:
             connection_socket.close()
             print("Closing")
     serverSocket.close()
     sys.exit()
 
-def run():
-    print("In run")
+if __name__ == '__main__':
+    start_server()
 

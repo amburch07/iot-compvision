@@ -1,87 +1,36 @@
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=10320 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=1940 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:51721-[] FTP session opened (connect)
-ERROR:pyftpdlib:unhandled exception in instance <ProcessingHandler(id=2531877568864, addr='127.0.0.1:51721')>
-Traceback (most recent call last):
-  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\servers.py", line 255, in handle_accepted
-    handler.handle()
-  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 1329, in handle
-    self.on_connect()
-  File "C:/Users/Tarek/PycharmProjects/iot-compvision/ProcessingServer/ProcessingServer.py", line 20, in on_connect
-    FTPServer.send("test", self.remote_ip)
-  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 886, in send
-    return self.socket.send(data)
-AttributeError: 'str' object has no attribute 'socket'
-INFO:pyftpdlib:127.0.0.1:51721-[] FTP session closed (disconnect).
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=13932 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=9456 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:51723-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:51723-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:51723-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-07-13-04-04.png completed=1 bytes=292 seconds=0.016
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=11172 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=18632 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:51729-[] FTP session opened (connect)
-ERROR:pyftpdlib:unhandled exception in instance <ProcessingHandler(id=3046649020824, addr='127.0.0.1:51729')>
-Traceback (most recent call last):
-  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\servers.py", line 255, in handle_accepted
-    handler.handle()
-  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 1329, in handle
-    self.on_connect()
-  File "C:/Users/Tarek/PycharmProjects/iot-compvision/ProcessingServer/ProcessingServer.py", line 20, in on_connect
-    FTPServer.send("test", self.remote_ip)
-  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 886, in send
-    return self.socket.send(data)
-AttributeError: 'str' object has no attribute 'socket'
-INFO:pyftpdlib:127.0.0.1:51729-[] FTP session closed (disconnect).
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=2848 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=11508 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:51733-[] FTP session opened (connect)
-ERROR:pyftpdlib:unhandled exception in instance <ProcessingHandler(id=2302150096320, addr='127.0.0.1:51733')>
-Traceback (most recent call last):
-  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\servers.py", line 255, in handle_accepted
-    handler.handle()
-  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 1329, in handle
-    self.on_connect()
-  File "C:/Users/Tarek/PycharmProjects/iot-compvision/ProcessingServer/ProcessingServer.py", line 20, in on_connect
-    FTPServer.send("test\r\n", self.remote_ip)
-  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 886, in send
-    return self.socket.send(data)
-AttributeError: 'str' object has no attribute 'socket'
-INFO:pyftpdlib:127.0.0.1:51733-[] FTP session closed (disconnect).
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=14452 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=15432 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:64940-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:64940-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:64940-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-07-19-24-14.png completed=1 bytes=293 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64940-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-07-19-24-19.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64940-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-07-19-24-24.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=12064 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=17236 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=8352 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=13164 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=5168 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=20336 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=11744 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=14844 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=22424 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
@@ -89,265 +38,43 @@ INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=16952 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=15784 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=1832 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=8420 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=11116 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=16932 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=17508 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=13440 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=13000 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=8300 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=20340 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=15448 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=5652 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:52996-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:52996-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:52996-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-07-20-49-05.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:52996-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-07-20-49-10.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=1268 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=2448 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=11600 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=23068 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=4036 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=20820 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=14708 <<<
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=2852 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=10700 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=11096 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=14384 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=6548 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:57834-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:57834-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:57834-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-07-22-34-55.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=5240 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:64158-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:64158-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:64158-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-05-24.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64158-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-05-29.png completed=1 bytes=293 seconds=0.0
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=14432 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:64205-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-03.png completed=1 bytes=292 seconds=0.015
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-08.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-13.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-18.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-23.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-28.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-33.png completed=1 bytes=293 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-38.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-43.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-48.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-53.png completed=1 bytes=293 seconds=0.016
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-07-58.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-03.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-08.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-13.png completed=1 bytes=292 seconds=0.015
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-18.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-23.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-28.png completed=1 bytes=293 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-33.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-38.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-43.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-48.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-53.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-08-58.png completed=1 bytes=293 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-03.png completed=1 bytes=292 seconds=0.016
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-08.png completed=1 bytes=293 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-13.png completed=1 bytes=293 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-18.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-23.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-28.png completed=1 bytes=293 seconds=0.016
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-33.png completed=1 bytes=293 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-38.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-43.png completed=1 bytes=292 seconds=0.016
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-48.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-53.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-09-58.png completed=1 bytes=293 seconds=0.015
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-03.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-08.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-13.png completed=1 bytes=291 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-18.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-23.png completed=1 bytes=293 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-28.png completed=1 bytes=292 seconds=0.015
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-33.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-38.png completed=1 bytes=292 seconds=0.015
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-43.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-48.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-53.png completed=1 bytes=290 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64205-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-10-58.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=20388 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:64492-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:64492-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:64492-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-17-36.png completed=1 bytes=293 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64492-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-17-41.png completed=1 bytes=292 seconds=0.016
-INFO:pyftpdlib:127.0.0.1:64492-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-17-46.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64492-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-17-51.png completed=1 bytes=293 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64492-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-17-56.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64492-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-18-01.png completed=1 bytes=292 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64492-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-18-06.png completed=1 bytes=292 seconds=0.016
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=22608 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=16356 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:64594-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:64594-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:64594-[webcam] FTP session closed (disconnect).
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=11760 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:64606-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:64606-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:64606-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-22-02.png completed=1 bytes=312907 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64606-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-22-07.png completed=1 bytes=341858 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64606-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-22-13.png completed=1 bytes=295006 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64606-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-22-18.png completed=1 bytes=334040 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64606-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-22-23.png completed=1 bytes=332999 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64606-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-22-28.png completed=1 bytes=342865 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64606-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-22-33.png completed=1 bytes=337847 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64606-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-22-38.png completed=1 bytes=360660 seconds=0.0
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=18752 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:64646-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-02.png completed=1 bytes=261598 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-07.png completed=1 bytes=320617 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-12.png completed=1 bytes=316010 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-17.png completed=1 bytes=349032 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-22.png completed=1 bytes=312345 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-27.png completed=1 bytes=311516 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-32.png completed=1 bytes=311692 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-37.png completed=1 bytes=296018 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-42.png completed=1 bytes=295356 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-47.png completed=1 bytes=310836 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:64646-[webcam] FTP session closed (disconnect).
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=20916 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:65094-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:65094-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:65094-[webcam] FTP session closed (disconnect).
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=8292 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:65109-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:65109-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:65109-[webcam] FTP session closed (disconnect).
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=14436 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:65136-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:65136-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:65136-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-43-42.png completed=1 bytes=307125 seconds=0.0
-ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2422824587560, addr='127.0.0.1:65136', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-compvision\\ProcessingServer\\data_received\\2019-04-08-11-43-42.png'>, bytes-trans=307125)>
-Traceback (most recent call last):
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\asyncore.py", line 83, in read
-    obj.handle_read_event()
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
-    chunk = self.recv(self.ac_in_buffer_size)
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
-    self.handle_close()
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
-    self.close()
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
-    self.cmd_channel.on_file_received(filename)
-  File "C:/Users/elkheirt/PycharmProjects/iot-compvision/ProcessingServer/ProcessingServer.py", line 47, in on_file_received
-    DataStorage.create_json("Unknown", -1, ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
-TypeError: create_json() takes 2 positional arguments but 4 were given
-INFO:pyftpdlib:127.0.0.1:65136-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-43-47.png completed=1 bytes=324021 seconds=0.0
-ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2422824587560, addr='127.0.0.1:65136', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-compvision\\ProcessingServer\\data_received\\2019-04-08-11-43-47.png'>, bytes-trans=324021)>
-Traceback (most recent call last):
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\asyncore.py", line 83, in read
-    obj.handle_read_event()
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
-    chunk = self.recv(self.ac_in_buffer_size)
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
-    self.handle_close()
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
-    self.close()
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
-    self.cmd_channel.on_file_received(filename)
-  File "C:/Users/elkheirt/PycharmProjects/iot-compvision/ProcessingServer/ProcessingServer.py", line 47, in on_file_received
-    DataStorage.create_json("Unknown", -1, ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
-TypeError: create_json() takes 2 positional arguments but 4 were given
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=8396 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:65151-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:65151-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:65151-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-44-27.png completed=1 bytes=314290 seconds=0.0
-ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=3027947233520, addr='127.0.0.1:65151', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-compvision\\ProcessingServer\\data_received\\2019-04-08-11-44-27.png'>, bytes-trans=314290)>
-Traceback (most recent call last):
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\asyncore.py", line 83, in read
-    obj.handle_read_event()
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
-    chunk = self.recv(self.ac_in_buffer_size)
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
-    self.handle_close()
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
-    self.close()
-  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
-    self.cmd_channel.on_file_received(filename)
-  File "C:/Users/elkheirt/PycharmProjects/iot-compvision/ProcessingServer/ProcessingServer.py", line 47, in on_file_received
-    DataStorage.create_json("Unknown", -1, ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
-TypeError: create_json() takes 2 positional arguments but 4 were given
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=2780 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:65181-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:65181-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:65181-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-45-14.png completed=1 bytes=306844 seconds=0.015
-INFO:pyftpdlib:127.0.0.1:65181-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-45-19.png completed=1 bytes=338322 seconds=0.0
