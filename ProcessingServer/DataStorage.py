@@ -4,6 +4,7 @@
 
 import json
 
+
 JSON_DATA = {
     'classification': 'none',
     'confidence': 0,
@@ -27,4 +28,16 @@ def create_json(classification, confidence, date_information, file_name):
         json.dump(data, write_file)
 
 
+
+
+
+def create_json(information, file_name):
+    data = dict.fromkeys(['year', 'month', 'day', 'hour', 'minute', 'second'])
+    index = 0
+    for key, value in data.items():
+        data[key] = information[index]
+        index = index + 1
+    print(data)
+    with open(file_name + ".json", 'w') as outfile:
+        json.dump(data, outfile)
 

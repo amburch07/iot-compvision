@@ -1,24 +1,23 @@
 """Instantiates an FTP server to receive images, and an HTTP client to send classification data
 
 """
+
 import threading
 import time
-
 from pyftpdlib.authorizers import DummyAuthorizer
 from pyftpdlib.handlers import FTPHandler
 from pyftpdlib.servers import FTPServer
+import os
+import cv2
 
 
 import logging
-
 import ImagePreprocessing
 import HTTPClient
 import DataStorage
 import ImageMetadata
-
-
-import os
-import cv2
+import requests
+import json
 
 
 class ProcessingHandler(FTPHandler):
@@ -47,6 +46,8 @@ class ProcessingHandler(FTPHandler):
         cv2.imwrite('data_processed\\%s\\%s.png' % (file_name, file_name), pre_processed_image)
         DataStorage.create_json("Unknown", -1, ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
 
+
+
     def on_incomplete_file_received(self, file):
         print("Received incomplete file from %s" % self.username)
 
@@ -60,20 +61,12 @@ def start_ftp():
     handler = ProcessingHandler
     handler.authorizer = authorizer
     server = FTPServer(('0.0.0.0', 21), handler)
-
     logging.basicConfig(filename='./log/pyftpd.log', level=logging.INFO)  # Store FTP server log
     server.serve_forever()
 
 if __name__ == "__main__":
     ftp_server_thread = threading.Thread(target=start_ftp, args=())
     ftp_server_thread.start()
-
-
-
-
-
-
-
 
 
 
