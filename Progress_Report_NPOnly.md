@@ -49,23 +49,36 @@
 ## Week 3 (3/25 - 3/29)
 
 ### What did your team do last week?
-...
+* Used FTP to send a stream of images between computers
+* Began work on image pre-processing and computer vision algorithms
+* Began work on front-end of website
 
 ### What will you do this week?
-...
+* Finish webcam server, image pre-processing server, and web server
+* Integrate image pre-processing and computer vision code with server code
+* Begin work on back-end of website (Display live images from camera, alert user when person is detected, create database of people allowed to enter)
 
 ### Any blocking issues/challenges need to be addressed?
-...
+* Figure out how to make a web-page dynamic (Be updated with live information/alerts without refreshing)
 
 ----------------------------------------------------------
 
 ## Week 4 (4/1 - 4/5)
 
 ### What did your team do last week?
-...
+* Completed preprocessing steps and connected to server
+* Finished classification code except for minimal training and connecting componentess together
+* Raspberry pi LEDs set up and coded to turn them on and off
+* Stored data from classification in json (to send to webpage)
 
 ### What will you do this week?
-...
+* Prepare for presentation
+* Finish server code
+* Finish classification code
+* Send JSON and image to webpage and reload
+* Connect components
+* Comment/document our code
+* Start report
 
 ### Any blocking issues/challenges need to be addressed?
-...
+* HTML/CSS progress got inadvertantly erased, so redoing to have basic GUI/results page on hosted web page
