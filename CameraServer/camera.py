@@ -18,15 +18,6 @@ def take_photo():
     cv2.imwrite(file, cam_image)  # Write image data to file
 
 
-def take_dummy_photo():
-    num_a = random.randint(0, 255)
-    num_b = random.randint(0, 255)
-    num_c = random.randint(0, 255)
-    img = Image.new('RGB', (100, 100), color=(num_a, num_b, num_c))
-    img.save('images/' + datetime.now().strftime('%Y-%m-%d-%H-%M-%S') + ".png")
-    img.close()
-
-
 def close_camera():
     print("Closing camera")
     live_feed.release()

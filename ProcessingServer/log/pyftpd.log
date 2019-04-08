@@ -269,3 +269,85 @@ INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\i
 INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-42.png completed=1 bytes=295356 seconds=0.0
 INFO:pyftpdlib:127.0.0.1:64646-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-23-47.png completed=1 bytes=310836 seconds=0.0
 INFO:pyftpdlib:127.0.0.1:64646-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=20916 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:65094-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:65094-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:65094-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=8292 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:65109-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:65109-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:65109-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=14436 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:65136-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:65136-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:65136-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-43-42.png completed=1 bytes=307125 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2422824587560, addr='127.0.0.1:65136', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-compvision\\ProcessingServer\\data_received\\2019-04-08-11-43-42.png'>, bytes-trans=307125)>
+Traceback (most recent call last):
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/elkheirt/PycharmProjects/iot-compvision/ProcessingServer/ProcessingServer.py", line 47, in on_file_received
+    DataStorage.create_json("Unknown", -1, ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+TypeError: create_json() takes 2 positional arguments but 4 were given
+INFO:pyftpdlib:127.0.0.1:65136-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-43-47.png completed=1 bytes=324021 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2422824587560, addr='127.0.0.1:65136', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-compvision\\ProcessingServer\\data_received\\2019-04-08-11-43-47.png'>, bytes-trans=324021)>
+Traceback (most recent call last):
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/elkheirt/PycharmProjects/iot-compvision/ProcessingServer/ProcessingServer.py", line 47, in on_file_received
+    DataStorage.create_json("Unknown", -1, ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+TypeError: create_json() takes 2 positional arguments but 4 were given
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=8396 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:65151-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:65151-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:65151-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-44-27.png completed=1 bytes=314290 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=3027947233520, addr='127.0.0.1:65151', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-compvision\\ProcessingServer\\data_received\\2019-04-08-11-44-27.png'>, bytes-trans=314290)>
+Traceback (most recent call last):
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/elkheirt/PycharmProjects/iot-compvision/ProcessingServer/ProcessingServer.py", line 47, in on_file_received
+    DataStorage.create_json("Unknown", -1, ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+TypeError: create_json() takes 2 positional arguments but 4 were given
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=2780 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:65181-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:65181-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:65181-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-45-14.png completed=1 bytes=306844 seconds=0.015
+INFO:pyftpdlib:127.0.0.1:65181-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-45-19.png completed=1 bytes=338322 seconds=0.0
