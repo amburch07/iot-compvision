@@ -40,13 +40,27 @@ class ProcessingHandler(FTPHandler):
     def on_file_received(self, file):
         print("Received %s from %s" % (file, self.username))
         file_name = ImageMetadata.get_file_name(file)
-        # Create folder to hold pre-processed image and JSON
-        folder_name = "data_processed\\%s" % file_name
-        os.mkdir(folder_name)
-        pre_processed_image = ImagePreprocessing.process_image(file)
-        cv2.imwrite('data_processed\\%s\\%s.png' % (file_name, file_name), pre_processed_image)
-        DataStorage.create_json("Unknown", -1, ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
 
+        #run classification
+        os.system(python -W Classify/src/align/align_dataset_mtcnn.py Classify/datasets/test_pi Classify/datasets/test_pi_clean)
+        os.system(python -W ignore Classify/src/classifier.py CLASSIFY Classify/datasets/test_pi_clean Classify/models/20180408-102900.pb Classify/models/classifier.pkl > Classify/output.txt)
+
+
+        #os.mkdir(folder_name)
+        #pre_processed_image = ImagePreprocessing.process_image(file)
+        #cv2.imwrite('Classify/datasets/test_pi_clean/%s/%s.png' % (file_name, file_name), pre_processed_image)
+
+        #retreive classification info
+        with open("Classify/output.txt") as f:
+            lines = f.readlines()
+        info = lines[-2].split()[1:]
+        info = [info[0]+'_'+info[1], info[-1]]
+
+        #folder to hold pre-processed image and JSON
+        folder_name = "Classify/datasets/test_pi_clean/%s" % file_name
+        DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+
+        #now json is created
 
 
     def on_incomplete_file_received(self, file):
@@ -72,11 +86,3 @@ if __name__ == "__main__":
 
     tcp_client_thread = threading.Thread(target=TCP_Client.main())
     tcp_client_thread.start()
-
-
-
-
-
-
-
-
