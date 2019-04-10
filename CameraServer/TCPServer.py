@@ -23,6 +23,7 @@ def start_server():
                 print("Received message ", message)
                 if(message=="{start}"):
                     print("Taking photo")
+                    ftp_camera_client.send_file()
 
         except IOError:
             connection_socket.close()
