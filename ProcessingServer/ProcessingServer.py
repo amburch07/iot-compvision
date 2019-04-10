@@ -10,7 +10,6 @@ from pyftpdlib.servers import FTPServer
 import os
 import cv2
 
-
 import logging
 import ImagePreprocessing
 import HTTPClient
@@ -42,9 +41,10 @@ class ProcessingHandler(FTPHandler):
         file_name = ImageMetadata.get_file_name(file)
 
         #run classification
-        os.system("python classify/src/align/align_dataset_mtcnn.py classify/datasets/test_pi classify/datasets/test_pi_clean")
-        os.system("python classify/src/classifier.py CLASSIFY classify/datasets/test_pi_clean classify/models/20180408-102900.pb classify/models/classifier.pkl > classify/output.txt")
+        print("Ready to classify")
 
+        os.system("python3 classify/src/align/align_dataset_mtcnn.py classify/datasets/test_pi classify/datasets/test_pi_clean")
+        os.system("python3 classify/src/classifier.py CLASSIFY classify/datasets/test_pi_clean classify/models/20180408-102900.pb classify/models/classifier.pkl > classify/output.txt")
 
         #os.mkdir(folder_name)
         #pre_processed_image = ImagePreprocessing.process_image(file)
