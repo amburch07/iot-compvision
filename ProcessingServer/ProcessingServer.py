@@ -42,8 +42,8 @@ class ProcessingHandler(FTPHandler):
         file_name = ImageMetadata.get_file_name(file)
 
         #run classification
-        os.system(python -W Classify/src/align/align_dataset_mtcnn.py Classify/datasets/test_pi Classify/datasets/test_pi_clean)
-        os.system(python -W ignore Classify/src/classifier.py CLASSIFY Classify/datasets/test_pi_clean Classify/models/20180408-102900.pb Classify/models/classifier.pkl > Classify/output.txt)
+        os.system("python classify/src/align/align_dataset_mtcnn.py classify/datasets/test_pi classify/datasets/test_pi_clean")
+        os.system("python classify/src/classifier.py CLASSIFY classify/datasets/test_pi_clean classify/models/20180408-102900.pb classify/models/classifier.pkl > classify/output.txt")
 
 
         #os.mkdir(folder_name)
@@ -51,7 +51,7 @@ class ProcessingHandler(FTPHandler):
         #cv2.imwrite('Classify/datasets/test_pi_clean/%s/%s.png' % (file_name, file_name), pre_processed_image)
 
         #retreive classification info
-        with open("Classify/output.txt") as f:
+        with open("classify/output.txt") as f:
             lines = f.readlines()
         info = lines[-2].split()[1:]
         info = [info[0]+'_'+info[1], info[-1]]

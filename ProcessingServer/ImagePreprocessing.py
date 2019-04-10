@@ -4,10 +4,6 @@ Returns image data after processing
 For now, takes an image and makes it gray-scale
 """
 
-
-
-import Classifier
-
 import cv2
 
 
