@@ -8,7 +8,6 @@ import re
 
 # Removes file directory information and file extension information
 def get_file_name(file):
-    print("In Metedata ")
     start_of_name = file.rfind('\\') + 1
     end_of_name = len(file) - 4  # Account for '.png'
     file_name = file[start_of_name:end_of_name]

@@ -1,9 +1,5 @@
-Number of classes: 1
-Number of images: 1
+Number of classes: 4
+Number of images: 4
 Loading feature extraction model
-Model filename: models/20180408-102900.pb
+Model filename: classify/models/20180408-102900.pb
 Calculating features for images
-Testing classifier
-Loaded classifier model from file "models/classifier.pkl"
-   0  Ari Burch: 0.108
-Accuracy: 0.000

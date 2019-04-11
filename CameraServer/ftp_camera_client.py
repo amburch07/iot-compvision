@@ -19,10 +19,13 @@ def connect_to_server(host, port):
 
 def send_file():
     connect_to_server('localhost', 21)
-    camera.take_photo()  # Take photo and store it in the /images directory
+    print("Sending photo")
+    camera.take_dummy_photo() # Take photo and store it in the /images directory
     image_list = os.listdir('images')
     most_recent = open('images/' + image_list[-1], 'rb')
     ftp.storbinary('STOR ' + most_recent.name[7:], most_recent)
+    return most_recent.name
+
 
 
 def close_connection():
@@ -40,10 +43,7 @@ if __name__ == "__main__":
         ftp_send = threading.Thread(target=main(ftp_host, ftp_port))
     except IOError:
         print("Could not connect to FTP server!")
-
     TCPServer.start_server()
 
-if __name__ == "__main__":
-    connect_to_server('localhost', 21)
-    send_file()
+
 
