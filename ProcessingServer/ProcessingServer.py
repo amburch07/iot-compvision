@@ -49,15 +49,15 @@ class ProcessingHandler(FTPHandler):
 
 
         #retreive classification info
-        with open("classify\\output.txt") as f:
+        with open("classify/output.txt") as f:
             lines = f.readlines()
         info = lines[-2].split()[1:]
         info = [info[0]+'_'+info[1], info[-1]]
 
         #folder to hold pre-processed image and JSON
-        folder_name = "Classify\\datasets\\test_pi_clean\\%s" % file_name
+        folder_name = "classify/datasets/test_pi_clean/%s" % file_name
         os.mkdir(folder_name)
-        DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+        DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
 
         #now json is created
 
@@ -76,7 +76,7 @@ def start_ftp():
     handler = ProcessingHandler
     handler.authorizer = authorizer
     server = FTPServer(('0.0.0.0', 21), handler)
-    logging.basicConfig(filename='./log\\pyftpd.log', level=logging.INFO)  # Store FTP server log
+    logging.basicConfig(filename='./log/pyftpd.log', level=logging.INFO)  # Store FTP server log
     server.serve_forever()
 
 if __name__ == "__main__":
