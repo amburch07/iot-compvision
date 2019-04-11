@@ -7,6 +7,7 @@ import time
 from pyftpdlib.authorizers import DummyAuthorizer
 from pyftpdlib.handlers import FTPHandler
 from pyftpdlib.servers import FTPServer
+from pyftpdlib import servers
 import os
 import cv2
 
@@ -69,16 +70,28 @@ class ProcessingHandler(FTPHandler):
     def on_incomplete_file_sent(self, file):
         print("%s Sent incomplete file" % self.username)
 
+from pyftpdlib import servers
+from pyftpdlib.handlers import FTPHandler
+
 
 def start_ftp():
     print("Starting FTP")
     authorizer = DummyAuthorizer()
-    authorizer.add_user("webcam", "1234", "./data_received", perm="lw")
+    authorizer.add_user("webcam", "1234", "./data_received", perm="elrw")
     handler = ProcessingHandler
     handler.authorizer = authorizer
     server = FTPServer(('0.0.0.0', 21), handler)
+
+
+    #address = ("0.0.0.0", 21)  # listen on every IP on my machine on port 21
+    #server = servers.FTPServer(address, FTPHandler)
+    #server.serve_forever()
+
     logging.basicConfig(filename='./log/pyftpd.log', level=logging.INFO)  # Store FTP server log
     server.serve_forever()
+
+
+
 
 if __name__ == "__main__":
     ftp_server_thread = threading.Thread(target=start_ftp, args=())

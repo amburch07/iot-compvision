@@ -3,7 +3,7 @@
 from socket import *
 import sys
 
-server_name = 'localhost'
+server_name = '192.168.0.104'
 
 server_port = 1234
 
