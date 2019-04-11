@@ -351,3 +351,769 @@ INFO:pyftpdlib:127.0.0.1:65181-[] FTP session opened (connect)
 INFO:pyftpdlib:127.0.0.1:65181-[webcam] USER 'webcam' logged in.
 INFO:pyftpdlib:127.0.0.1:65181-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-45-14.png completed=1 bytes=306844 seconds=0.015
 INFO:pyftpdlib:127.0.0.1:65181-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-compvision\ProcessingServer\data_received\2019-04-08-11-45-19.png completed=1 bytes=338322 seconds=0.0
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=8540 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=5468 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:52695-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52695-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52695-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:52701-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52701-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52701-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-34-11.png completed=1 bytes=291 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2603549957088, addr='127.0.0.1:52701', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-34-11.png'>, bytes-trans=291)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 56, in on_file_received
+    info = lines[-2].split()[1:]
+IndexError: list index out of range
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=12856 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:52711-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52711-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52711-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-35-21.png completed=1 bytes=293 seconds=0.015
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1973531679768, addr='127.0.0.1:52711', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-35-21.png'>, bytes-trans=293)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 56, in on_file_received
+    info = lines[-2].split()[1:]
+IndexError: list index out of range
+INFO:pyftpdlib:127.0.0.1:52711-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=11020 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:52719-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52719-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52719-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-35-35.png completed=1 bytes=292 seconds=0.016
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2495205121272, addr='127.0.0.1:52719', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-35-35.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 56, in on_file_received
+    info = lines[-2].split()[1:]
+IndexError: list index out of range
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=3628 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:52738-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52738-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52738-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-38-12.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2883494722584, addr='127.0.0.1:52738', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-38-12.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 56, in on_file_received
+    info = lines[-2].split()[1:]
+IndexError: list index out of range
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=4076 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:52789-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52789-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52789-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-42-58.png completed=1 bytes=292 seconds=0.015
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2716192509624, addr='127.0.0.1:52789', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-42-58.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 56, in on_file_received
+    info = lines[-2].split()[1:]
+IndexError: list index out of range
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=5644 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:52833-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52833-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52833-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-44-57.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1845841330072, addr='127.0.0.1:52833', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-44-57.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/2019-04-10-23-44-57/2019-04-10-23-44-57.json'
+INFO:pyftpdlib:127.0.0.1:52847-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52833-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:52847-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52847-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-45-48.png completed=1 bytes=293 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1845841393536, addr='127.0.0.1:52847', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-45-48.png'>, bytes-trans=293)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/2019-04-10-23-45-48/2019-04-10-23-45-48.json'
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=6172 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:52880-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52880-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52880-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-49-13.png completed=1 bytes=292 seconds=0.016
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1753168662712, addr='127.0.0.1:52880', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-49-13.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/2019-04-10-23-49-13/2019-04-10-23-49-13.json'
+INFO:pyftpdlib:127.0.0.1:52880-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-49-18.png completed=1 bytes=292 seconds=0.016
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=3656 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:52899-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52899-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52899-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-49-57.png completed=1 bytes=293 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2308285824920, addr='127.0.0.1:52899', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-49-57.png'>, bytes-trans=293)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/2019-04-10-23-49-57/2019-04-10-23-49-57.json'
+INFO:pyftpdlib:127.0.0.1:52899-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-50-12.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2308285824920, addr='127.0.0.1:52899', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-50-12.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/2019-04-10-23-50-12/2019-04-10-23-50-12.json'
+INFO:pyftpdlib:127.0.0.1:52899-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-50-27.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2308285824920, addr='127.0.0.1:52899', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-50-27.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/2019-04-10-23-50-27/2019-04-10-23-50-27.json'
+INFO:pyftpdlib:127.0.0.1:52899-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-10-23-50-42.png completed=1 bytes=293 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2308285824920, addr='127.0.0.1:52899', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-10-23-50-42.png'>, bytes-trans=293)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/2019-04-10-23-50-42/2019-04-10-23-50-42.json'
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=13888 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50088-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50088-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50088-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\cat.jpg completed=1 bytes=249726 seconds=0.078
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2208750338000, addr='127.0.0.1:50088', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\cat.jpg'>, bytes-trans=249726)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/cat/cat.json'
+INFO:pyftpdlib:127.0.0.1:50088-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=9904 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50134-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50134-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50134-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=10888 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50144-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50144-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50144-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\obama.jpeg completed=1 bytes=1580075 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=3243963940816, addr='127.0.0.1:50144', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\obama.jpeg'>, bytes-trans=1580075)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/obama./obama..json'
+INFO:pyftpdlib:127.0.0.1:50144-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=7756 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50334-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50334-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50334-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\obama.jpeg completed=1 bytes=1580075 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2673579949920, addr='127.0.0.1:50334', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\obama.jpeg'>, bytes-trans=1580075)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/obama./obama..json'
+INFO:pyftpdlib:127.0.0.1:50334-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=9356 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50344-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50344-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50344-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-10-53-47.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1460212502144, addr='127.0.0.1:50344', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-10-53-47.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/2019-04-11-10-53-47/2019-04-11-10-53-47.json'
+INFO:pyftpdlib:127.0.0.1:50363-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50344-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:50363-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50363-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-10-57-42.png completed=1 bytes=292 seconds=0.016
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1460212569760, addr='127.0.0.1:50363', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-10-57-42.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/2019-04-11-10-57-42/2019-04-11-10-57-42.json'
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=11944 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50379-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50379-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50379-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-11-01-42.png completed=1 bytes=293 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:50389-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50379-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:50389-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50389-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-11-04-52.png completed=1 bytes=292 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:50389-[webcam] Control connection timed out.
+INFO:pyftpdlib:127.0.0.1:50389-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=7848 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50447-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50447-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50447-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-11-15-28.png completed=1 bytes=293 seconds=0.0
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=12128 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50457-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50457-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50457-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-11-16-08.png completed=1 bytes=293 seconds=0.0
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=13084 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50469-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50469-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50469-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-11-16-51.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1907604945832, addr='127.0.0.1:50469', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-11-16-51.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 61, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify/datasets/test_pi_clean/2019-04-11-11-16-51/2019-04-11-11-16-51.json'
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=1668 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50494-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50494-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50494-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-11-19-33.png completed=1 bytes=292 seconds=0.0
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=2876 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50505-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50505-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50505-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-11-21-35.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2684137806648, addr='127.0.0.1:50505', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-11-21-35.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-11-21-35\\2019-04-11-11-21-35.json'
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=4208 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50515-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50515-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50515-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-11-22-06.png completed=1 bytes=293 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2804380900432, addr='127.0.0.1:50515', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-11-22-06.png'>, bytes-trans=293)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-11-22-06\\2019-04-11-11-22-06.json'
+INFO:pyftpdlib:127.0.0.1:50781-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50515-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:50781-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50781-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-11-46-11.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2804380964344, addr='127.0.0.1:50781', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-11-46-11.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-11-46-11\\2019-04-11-11-46-11.json'
+INFO:pyftpdlib:127.0.0.1:50790-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50781-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:50790-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50790-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-11-46-41.png completed=1 bytes=293 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2804380900992, addr='127.0.0.1:50790', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-11-46-41.png'>, bytes-trans=293)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-11-46-41\\2019-04-11-11-46-41.json'
+INFO:pyftpdlib:127.0.0.1:50790-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:50861-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50861-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50861-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-12-03-13.png completed=1 bytes=292 seconds=0.016
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2804380900992, addr='127.0.0.1:50861', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-12-03-13.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-12-03-13\\2019-04-11-12-03-13.json'
+INFO:pyftpdlib:127.0.0.1:50866-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50861-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:50866-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50866-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-12-03-21.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2804380964792, addr='127.0.0.1:50866', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-12-03-21.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-12-03-21\\2019-04-11-12-03-21.json'
+INFO:pyftpdlib:127.0.0.1:50872-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50866-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:50872-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50872-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-12-03-28.png completed=1 bytes=292 seconds=0.016
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2804380900936, addr='127.0.0.1:50872', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-12-03-28.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-12-03-28\\2019-04-11-12-03-28.json'
+INFO:pyftpdlib:127.0.0.1:50878-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50872-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:50878-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50878-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-12-03-35.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2804380964624, addr='127.0.0.1:50878', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-12-03-35.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-12-03-35\\2019-04-11-12-03-35.json'
+INFO:pyftpdlib:127.0.0.1:50884-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50884-[] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:50878-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:50933-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50933-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50933-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-12-22-36.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2804380900992, addr='127.0.0.1:50933', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-12-22-36.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-12-22-36\\2019-04-11-12-22-36.json'
+INFO:pyftpdlib:127.0.0.1:50933-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=400 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:50945-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50945-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50945-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-12-23-09.png completed=1 bytes=293 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1802632534952, addr='127.0.0.1:50945', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-12-23-09.png'>, bytes-trans=293)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-12-23-09\\2019-04-11-12-23-09.json'
+INFO:pyftpdlib:127.0.0.1:50945-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:50951-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:50951-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:50951-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-12-23-23.png completed=1 bytes=290 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1802632534952, addr='127.0.0.1:50951', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-12-23-23.png'>, bytes-trans=290)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 784, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 873, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 904, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-12-23-23\\2019-04-11-12-23-23.json'
+INFO:pyftpdlib:127.0.0.1:50951-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=14876 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=1852 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:51372-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:51372-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:51372-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-13-29-47.png completed=1 bytes=292 seconds=0.016
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2413321613264, addr='127.0.0.1:51372', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-13-29-47.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-13-29-47\\2019-04-11-13-29-47.json'
+INFO:pyftpdlib:127.0.0.1:51372-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=14724 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:51409-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:51409-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:51409-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-13-34-28.png completed=1 bytes=292 seconds=0.016
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2475575140816, addr='127.0.0.1:51409', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-13-34-28.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 58, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-13-34-28\\2019-04-11-13-34-28.json'
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=11832 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:51538-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:51538-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:51538-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-13-51-22.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2712540275264, addr='127.0.0.1:51538', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-13-51-22.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\asyncore.py", line 83, in read
+    obj.handle_read_event()
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 54, in on_file_received
+    info = lines[-2].split()[1:]
+IndexError: list index out of range
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=15140 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:51549-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:51549-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:51549-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-13-51-44.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1860163068536, addr='127.0.0.1:51549', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\Tarek\\PycharmProjects\\iot-compvision_new\\ProcessingServer\\data_received\\2019-04-11-13-51-44.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\Tarek\Miniconda3\envs\iot_final\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 60, in on_file_received
+    DataStorage.create_json(info[0], info[1], ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
+  File "C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\DataStorage.py", line 27, in create_json
+    with open(file_name, 'w') as write_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Classify\\datasets\\test_pi_clean\\2019-04-11-13-51-44\\2019-04-11-13-51-44.json'
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=8312 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:51562-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:51562-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:51562-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-13-52-33.png completed=1 bytes=292 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:51562-[webcam] Control connection timed out.
+INFO:pyftpdlib:127.0.0.1:51562-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:51618-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:51618-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:51618-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-13-58-12.png completed=1 bytes=291 seconds=0.016
+INFO:pyftpdlib:127.0.0.1:51618-[webcam] Control connection timed out.
+INFO:pyftpdlib:127.0.0.1:51618-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=15756 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:51672-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:51672-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:51672-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-14-20-55.png completed=1 bytes=293 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:51672-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:51678-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:51678-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:51678-[webcam] STOR C:\Users\Tarek\PycharmProjects\iot-compvision_new\ProcessingServer\data_received\2019-04-11-14-21-10.png completed=1 bytes=293 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:51678-[webcam] FTP session closed (disconnect).

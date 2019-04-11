@@ -1,51 +1,133 @@
-<<<<<<< HEAD
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 
-<!--https://stackoverflow.com/questions/14284124/check-if-file-has-changed-using-html5-file-api --->
-
-<html>
-     <head>
-        <title>
-            A Simple HTML Document
-        </title>
-        <script src = "scripts/jquery.js"></script>
-         <script>
-            $(document).ready(function() {
-                $("#buttonStart").click(function(event) {
-                    event.preventDefault();
-                    $.ajax({
-                        
-                    }); 
-                });
-            });
-         </script>
-    </head>
-    <body>
-     
-
-        <button id = "buttonStart" type="button">
-            Start recording
-        </button>
-            
+  <title>YourSecurityFeed</title>
+  <link href="styles/styles.css" type="text/css" rel="stylesheet" />
     
-    </body>
-</html> 
+    <script>
+        // https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+        
+            function startConnection() {
+                var webSocket = new WebSocket("ws://127.0.0.1:5678/");
+                
+                var sendStart = document.querySelector(".startButton");
+                var closeConnection = document.querySelector(".closeButton");
+             
+                sendStart.onclick = function(event) {
+                    webSocket.send("{start}");
+                }
+             
+                closeConnection.onclick = function(event) {
+                    webSocket.send("{end}");
+                }
+             
+             
+             
+                webSocket.onmessage = function(event) {
+                    console.log("Received message: " + event.data)
+                }
+                
+                webSocket.onerror = function(event) {
+                    console.log("Error: Couldn't connect!")
+                    // Display error on page
+                }
+        
+        };
+    </script>
+    <script>
+        function endConnection() {
+            
+        }
+    
+    </script>
+</head>
 
+<body onload="startConnection();">
+  <center>
+    <h1><b>Your Security Feed</b></h1>
+  </center>
 
+  <table class="table1">
+    <tr>
+      <th>
+        <center>
+          <b>Facial Recognition</b>
+        </center>
+      </th>
+    </tr>
 
-=======
-<html>
-    <head>
-        <title>
-            A Simple HTML Document
-        </title>
-        <script>
-            console.log("Test");
-        </script>
-    </head>
-    <body>
-        <p>This is a very simple HTML document</p>
-        <p>It only has two paragraphs</p>
-    </body>
+    <tr>
+      <td class="picture">
+        <center>
+          <img src="images/face.jpg" alt="face" title="face" width="450" height="550"
+          frameboader:="4px&quot;" />
+        </center>
+
+        <center>
+          <b>Detected objects will appear here</b>
+        </center>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        
+            <button class="startButton"><img src="images/start.gif:%20alt=" width="450" height="15" />
+
+            <center>
+              Start Video Feed
+            </center></button> <input type="hidden" name="Start" />
+         
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+            <button class="closeButton"><img src="images/end.gif:%20alt" width="450" height="15">
+
+            <center>
+              End Video Feed
+            </center></button> <input type="hidden" name="End" />
+        </td>
+    </tr>
+  </table>
+
+  <table class="table2">
+    <tr>
+      <th>User Alerts</th>
+    </tr>
+
+    <tr>
+      <td>Your security system is on</td>
+    </tr>
+
+    <tr>
+      <td>An object has been detected</td>
+    </tr>
+
+    <tr>
+      <td>The object is of class</td>
+    </tr>
+
+    <tr>
+      <td>The is approved to enter</td>
+    </tr>
+
+    <tr>
+      <td class="td2">Door Unlocked</td>
+    </tr>
+  </table>
+
+  <table class="table3">
+    <tr>
+      <th>Something about this project</th>
+    </tr>
+  </table>
+</body>
 </html>
->>>>>>> origin/master
