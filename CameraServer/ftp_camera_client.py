@@ -18,7 +18,7 @@ def connect_to_server(host, port):
 
 
 def send_file():
-    connect_to_server('192.168.0.102', 21)
+    connect_to_server('localhost', 21)
     print("Sending photo")
     camera.take_dummy_photo() # Take photo and store it in the /images directory
     image_list = os.listdir('images')
@@ -37,10 +37,13 @@ def main(host, port):
     send_file()
 
 if __name__ == "__main__":
-    ftp_host = '192.168.0.102'
+    ftp_host = 'localhost'
     ftp_port = 21
     try:
         ftp_send = threading.Thread(target=main(ftp_host, ftp_port))
     except IOError:
         print("Could not connect to FTP server!")
     TCPServer.start_server()
+
+
+
