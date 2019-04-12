@@ -30,3 +30,32 @@
 - Tarek Elkheir
 
 - Chris Villamarin
+
+
+
+## Set Up
+1. Check Python requirements
+2. Download: https://drive.google.com/file/d/18bWyl_SieLtARy1tdjTIX25OAMIAVXHK/view?usp=sharing and place in `ProcessingServer/classify/datasets` subfolder
+3. On command prompt/terminal, cd into `ProcessingServer/classify` subfolder
+4. Run training and test sets via Python commands below
+
+#### Align Training Set (Isolate Face)
+`python3 -W ignore src/align/align_dataset_mtcnn.py datasets/train datasets/train_clean`
+
+#### Train Classifier
+`python3 -W ignore src/classifier.py TRAIN datasets/train_clean /models/20180408-102900.pb models/classifier.pkl --batch_size 25`
+
+#### Align Test
+`python3 -W ignore src/align/align_dataset_mtcnn.py datasets/test datasets/test_clean`
+
+#### Classification of Test Set
+`python3 -W ignore src/classifier.py CLASSIFY datasets/test_clean models/20180408-102900.pb models/classifier.pkl`
+
+#### To Classify Camera Inputs (separate from full networking application - only run to see classifier by itself)
+Images must be saved in `datasets/test_pi` in `Unknown` subfolder
+
+Align input: `python3 -W ignore src/align/align_dataset_mtcnn.py datasets/test_pi datasets/test_pi_clean`
+
+`python -W ignore src/classifier.py CLASSIFY datasets/test_pi models/20180408-102900.pb models/classifier.pkl > output.txt`
+
+
