@@ -1,5 +1,0 @@
-Number of classes: 4
-Number of images: 4
-Loading feature extraction model
-Model filename: classify/models/20180408-102900.pb
-Calculating features for images
