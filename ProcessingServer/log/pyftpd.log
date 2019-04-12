@@ -2047,3 +2047,150 @@ Traceback (most recent call last):
   File "C:/Users/Tarek/PycharmProjects/iot-compvision_new/ProcessingServer/ProcessingServer.py", line 71, in on_file_received
     with open('current_directory.txt', 'r+') as file:
 FileNotFoundError: [Errno 2] No such file or directory: 'current_directory.txt'
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=19292 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:61584-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:61584-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:61584-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-12-00-07-58.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2850804359856, addr='127.0.0.1:61584', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-final\\ProcessingServer\\Web\\images\\2019-04-12-00-07-58.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/elkheirt/PycharmProjects/iot-final/ProcessingServer/ProcessingServer.py", line 71, in on_file_received
+    with open('current_directory.txt', 'r+') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'current_directory.txt'
+INFO:pyftpdlib:127.0.0.1:62275-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:61584-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:62275-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:62275-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-12-00-08-48.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=2851197270168, addr='127.0.0.1:62275', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-final\\ProcessingServer\\Web\\images\\2019-04-12-00-08-48.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/elkheirt/PycharmProjects/iot-final/ProcessingServer/ProcessingServer.py", line 71, in on_file_received
+    with open('current_directory.txt', 'r+') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'current_directory.txt'
+INFO:pyftpdlib:127.0.0.1:62275-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=2072 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=20824 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:53436-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53436-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53436-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-12-00-17-25.png completed=1 bytes=292 seconds=0.015
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1915118576304, addr='127.0.0.1:53436', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-final\\ProcessingServer\\Web\\images\\2019-04-12-00-17-25.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/elkheirt/PycharmProjects/iot-final/ProcessingServer/ProcessingServer.py", line 71, in on_file_received
+    with open('current_directory.txt', 'r+') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'current_directory.txt'
+INFO:pyftpdlib:127.0.0.1:53482-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53436-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53482-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53482-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-12-00-17-28.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1915519998048, addr='127.0.0.1:53482', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-final\\ProcessingServer\\Web\\images\\2019-04-12-00-17-28.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/elkheirt/PycharmProjects/iot-final/ProcessingServer/ProcessingServer.py", line 71, in on_file_received
+    with open('current_directory.txt', 'r+') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'current_directory.txt'
+INFO:pyftpdlib:127.0.0.1:53524-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53482-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53524-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53524-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-12-00-17-31.png completed=1 bytes=293 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1915519997656, addr='127.0.0.1:53524', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-final\\ProcessingServer\\Web\\images\\2019-04-12-00-17-31.png'>, bytes-trans=293)>
+Traceback (most recent call last):
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/elkheirt/PycharmProjects/iot-final/ProcessingServer/ProcessingServer.py", line 71, in on_file_received
+    with open('current_directory.txt', 'r+') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'current_directory.txt'
+INFO:pyftpdlib:127.0.0.1:53544-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53524-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53544-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53544-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-12-00-17-32.png completed=1 bytes=293 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1915519997320, addr='127.0.0.1:53544', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-final\\ProcessingServer\\Web\\images\\2019-04-12-00-17-32.png'>, bytes-trans=293)>
+Traceback (most recent call last):
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/elkheirt/PycharmProjects/iot-final/ProcessingServer/ProcessingServer.py", line 71, in on_file_received
+    with open('current_directory.txt', 'r+') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'current_directory.txt'
+INFO:pyftpdlib:127.0.0.1:53560-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53544-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53560-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53560-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-12-00-17-34.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1915519997544, addr='127.0.0.1:53560', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-final\\ProcessingServer\\Web\\images\\2019-04-12-00-17-34.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/elkheirt/PycharmProjects/iot-final/ProcessingServer/ProcessingServer.py", line 71, in on_file_received
+    with open('current_directory.txt', 'r+') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'current_directory.txt'
+INFO:pyftpdlib:127.0.0.1:53560-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53763-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53763-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53763-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-12-00-17-49.png completed=1 bytes=292 seconds=0.0
+ERROR:pyftpdlib:unhandled exception in instance <DTPHandler(id=1915118576304, addr='127.0.0.1:53763', user='webcam', sending-file=<_io.BufferedWriter name='C:\\Users\\elkheirt\\PycharmProjects\\iot-final\\ProcessingServer\\Web\\images\\2019-04-12-00-17-49.png'>, bytes-trans=292)>
+Traceback (most recent call last):
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 786, in handle_read
+    chunk = self.recv(self.ac_in_buffer_size)
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\ioloop.py", line 913, in recv
+    self.handle_close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 875, in handle_close
+    self.close()
+  File "C:\Users\elkheirt\AppData\Local\Continuum\miniconda3\lib\site-packages\pyftpdlib\handlers.py", line 906, in close
+    self.cmd_channel.on_file_received(filename)
+  File "C:/Users/elkheirt/PycharmProjects/iot-final/ProcessingServer/ProcessingServer.py", line 71, in on_file_received
+    with open('current_directory.txt', 'r+') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'current_directory.txt'
