@@ -56,6 +56,6 @@ Images must be saved in `datasets/test_pi` in `Unknown` subfolder
 
 Align input: `python3 -W ignore src/align/align_dataset_mtcnn.py datasets/test_pi datasets/test_pi_clean`
 
-`python -W ignore src/classifier.py CLASSIFY datasets/test_pi/clean models/20180408-102900.pb models/classifier.pkl > output.txt`
+`python -W ignore src/classifier.py CLASSIFY datasets/test_pi_clean models/20180408-102900.pb models/classifier.pkl > output.txt`
 
 
