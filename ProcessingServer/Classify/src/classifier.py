@@ -66,8 +66,8 @@ def main(args):
                 dataset = facenet.get_dataset(args.data_dir)
 
             # Check that there are at least one training image per class
-            for cls in dataset:
-                assert len(cls.image_paths)>0, 'There must be at least one image for each class in the dataset'
+            #for cls in dataset:
+            #    assert len(cls.image_paths)>0, 'There must be at least one image for each class in the dataset'
 
 
             paths, labels = facenet.get_image_paths_and_labels(dataset)

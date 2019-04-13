@@ -22,15 +22,16 @@
                 success: function (data) {
                     $(data).find("a").attr("href", function (i, val) {
                         if(val.match(/\.(jpe?g|png|gif)$/)) {
-                            var currentString = val.substring(val.lastIndexOf("\\") + 1).replace(".png", "");
+                            var currentString = val.substring(val.lastIndexOf("/") + 1).replace(".png", "");
                             
                             var strings = currentString.split('-');
                             var currentDate = new Date(strings[0], strings[1] - 1, strings[2], strings[3], strings[4], strings[5]);
-                            
+                            console.log(currentDate);
                             if(currentDate > maxDate) {
                                 maxDate = currentDate;
                                 newestFile = val;
-                            }   
+                            }
+                               
                         }
                     });
                     var image = document.getElementById("face");
@@ -58,11 +59,15 @@
                     var i = 0;
                     interval = setInterval(function () {
                         i++;
+                        console.log("Sending");
                         webSocket.send("{start}");
-                    }, 3000);
+                    }, 60000);
                     console.log("Clicked");
                     
                 }
+                
+                
+                
 
                 closeConnection.onclick = function(event) {
                     clearInterval(interval);

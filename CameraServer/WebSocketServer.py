@@ -3,7 +3,7 @@ import asyncio
 import datetime
 import random
 import websockets
-import CameraServer.ftp_camera_client
+import ftp_camera_client
 async def listen(websocket, path):
     await websocket.send("Hello")
     while True:
@@ -12,11 +12,11 @@ async def listen(websocket, path):
         print("Message received: " + message)
         if(message == "{start}"):
             print("Taking photo")
-            fileName = CameraServer.ftp_camera_client.send_file()
+            fileName = ftp_camera_client.send_file()
             await websocket.send(fileName)
         elif (message == "{end}"):
             print("Closing connection to FTP")
-            CameraServer.ftp_camera_client.close_connection()
+            ftp_camera_client.close_connection()
 
 
 start_server = websockets.serve(listen, '127.0.0.1', 5678)
