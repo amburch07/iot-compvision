@@ -26,7 +26,7 @@ from __future__ import division
 from __future__ import print_function
 
 from scipy import misc
-
+import imageio
 import warnings
 
 with warnings.catch_warnings():
@@ -92,7 +92,7 @@ def main(args):
                 #print(image_path)
                 if not os.path.exists(output_filename):
                     try:
-                        img = misc.imread(image_path)
+                        img = imageio.imread(image_path)
                     except (IOError, ValueError, IndexError) as e:
                         errorMessage = '{}: {}'.format(image_path, e)
                         #print(errorMessage)
