@@ -12,7 +12,7 @@ ftp = FTP('')
 ftp = FTP('')
 
 
-def connect_to_server(host, port):
+def connect_to_server(host, port)       :
     ftp.connect(host, port)
     ftp.login(user="webcam", passwd="1234")
 

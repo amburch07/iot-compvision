@@ -28,12 +28,12 @@ table.table2 {
 table.table3 {
     margin-top: -100px;
     margin-left: 850px;
+    width: 50;
     border-color:black
 }
 
 th {
     font-size: 200%;
-    width:500;
    border-top:4px solid;
     border-bottom: 4px solid;
     border-right: 4px solid;

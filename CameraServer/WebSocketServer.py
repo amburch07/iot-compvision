@@ -1,6 +1,4 @@
 
-# WS server that sends messages at random intervals
-
 import asyncio
 import datetime
 import random
@@ -19,8 +17,6 @@ async def listen(websocket, path):
         elif (message == "{end}"):
             print("Closing connection to FTP")
             CameraServer.ftp_camera_client.close_connection()
-
-
 
 
 start_server = websockets.serve(listen, '127.0.0.1', 5678)
