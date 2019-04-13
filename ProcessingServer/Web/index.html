@@ -11,7 +11,7 @@
     <script>
       //https://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery/18480589#18480589
      //https://stackoverflow.com/questions/492994/compare-two-dates-with-javascript
-        window.setInterval(
+       /* window.setInterval(
         function findImages() {
             var folder = "./images/";
             var maxDate = null;
@@ -38,15 +38,47 @@
                     image.src = newestFile;
                 }
             });
-        }, 1000);  
+        }, 1000);  */
+        
+        window.setInterval(
+            function findImages() {
+                var root = "./processed_data/";
+                var maxDate = null;
+                var newestFolder = null;
+                
+                $.ajax({
+                    url : root,
+                    success: function (data) {
+                        $(data).find("a").attr("href", function (i, val) {
+                            if(val.startsWith("\\p")) {
+                               var currentString = val.substring(val.lastIndexOf("\\") + 1);
+                               var strings = currentString.split('-');
+                               var currentDate = new Date(strings[0], strings[1] - 1, strings[2], strings[3], strings[4], strings[5]);
+                    
+                               if(currentDate > maxDate) {
+                                   maxDate = currentDate;
+                                   newestFolder = val;
+                               }
+                               
+                            }
+                        });
+                        console.log(newestFolder);
+                        //var image = document.getElementById("face");
+                        //image.src = newestFile;
+                    }
+                });
+                
+        }, 3000);
+        
+        function testFunction(folderName) {
+             console.log(folderName);
+        };
     </script>
 
 
   
  <script>
         // https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
-
-            
 
             function startConnection() {
                 var webSocket = new WebSocket("ws://127.0.0.1:5678/");
@@ -56,14 +88,13 @@
                 var closeConnection = document.querySelector(".closeButton");
 
                 sendStart.onclick = function(event) {
+                    console.log("Clicked");
                     var i = 0;
                     interval = setInterval(function () {
                         i++;
                         console.log("Sending");
                         webSocket.send("{start}");
                     }, 60000);
-                    console.log("Clicked");
-                    
                 }
                 
                 
@@ -80,10 +111,6 @@
                 webSocket.onerror = function(event) {
                     console.log("Error: Couldn't connect!")
                     // Display error on page
-                }
-                
-                function sleep(ms) {
-                    return new Promise(resolve => setTimeout(resolve, ms));
                 }
         };
 
