@@ -1,61 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    background-color: cornflowerblue;
+nav {
+  padding: 1em;
 }
 
-h1 {
-    font-size: 300%;
-    color: azure
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
 }
 
 hr {
     border: 8px solid;
-    border-color: azure
 }
 
-table.table1 {
-    margin-left: 100px;
-}
-
-table.table2 {
-    margin-top: -550px;
-    margin-left:1500px;
-    background-color: azure;
-    border-color:black
-    
-}
-table.table3 {
-    margin-top: -100px;
-    margin-left: 850px;
-    width: 50;
-    border-color:black
-}
-
-th {
-    font-size: 200%;
-   border-top:4px solid;
-    border-bottom: 4px solid;
-    border-right: 4px solid;
-    border-left: 4px solid;
-    background-color: azure;
-    border-color:black
+#face {
+  margin: 1em;
+  padding: 1em;
 }
 
 button {
-    border-bottom: 4px solid;
-    border-top: 4px solid;
-    font-size: 125%;
-    background-color: azure;
-    text-shadow: 3px #ffffff;
+  margin: 1em;
 }
 
-td {
-    border-right: 4px solid;
-    border-left: 4px solid;
-    border-bottom: 4px solid;
-    font-size: 125%;
-    background-color: azure;
-    border-color: black;
+footer {
+  margin: 1em;
 }
 
+.log {
+  height: 60em;
+  overflow: auto;
+}
+
+.container {
+  margin-top: 2em;
+}
