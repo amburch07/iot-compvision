@@ -27,11 +27,10 @@
                             var strings = currentString.split('-');
                             var currentDate = new Date(strings[0], strings[1] - 1, strings[2], strings[3], strings[4], strings[5]);
                             
-                            if(currentDate > maxDate){
+                            if(currentDate > maxDate) {
                                 maxDate = currentDate;
                                 newestFile = val;
-                            }
-                            
+                            }   
                         }
                     });
                     var image = document.getElementById("face");
@@ -46,23 +45,27 @@
  <script>
         // https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
 
-            function sleep(ms) {
-                return new Promise(resolve => setTimeout(resolve, ms));
-            }
+            
 
             function startConnection() {
                 var webSocket = new WebSocket("ws://127.0.0.1:5678/");
 
                 var sendStart = document.querySelector(".startButton");
+                
                 var closeConnection = document.querySelector(".closeButton");
 
                 sendStart.onclick = function(event) {
-                    console.log("Clicked")
-                    webSocket.send("{start}");
+                    var i = 0;
+                    interval = setInterval(function () {
+                        i++;
+                        webSocket.send("{start}");
+                    }, 3000);
+                    console.log("Clicked");
+                    
                 }
 
                 closeConnection.onclick = function(event) {
-                    webSocket.send("{end}");
+                    clearInterval(interval);
                 }
 
                 webSocket.onmessage = function(event) {
@@ -72,6 +75,10 @@
                 webSocket.onerror = function(event) {
                     console.log("Error: Couldn't connect!")
                     // Display error on page
+                }
+                
+                function sleep(ms) {
+                    return new Promise(resolve => setTimeout(resolve, ms));
                 }
         };
 
@@ -147,11 +154,11 @@
     </tr>
 
     <tr>
-      <td>The object is of class</td>
+      <td>The object is of class Ari_Burch</td>
     </tr>
 
     <tr>
-      <td>The is approved to enter</td>
+      <td>The Ari_Burch is approved to enter</td>
     </tr>
 
     <tr>
@@ -159,9 +166,9 @@
     </tr>
   </table>
 
-  <table class="table3">
+  <table class="table3", style="width: 400px">
     <tr>
-      <th>Something about this project</th>
+      <th>Welcome to your security dashboard, this system will scan your face and detect wheather the security door will unlock or lock</th>
     </tr>
   </table>
 </body>

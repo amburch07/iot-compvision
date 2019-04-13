@@ -12,7 +12,7 @@ ftp = FTP('')
 ftp = FTP('')
 
 
-def connect_to_server(host, port):
+def connect_to_server(host, port)       :
     ftp.connect(host, port)
     ftp.login(user="webcam", passwd="1234")
 
@@ -20,7 +20,7 @@ def connect_to_server(host, port):
 def send_file():
     connect_to_server('localhost', 21)
     print("Sending photo")
-    camera.take_dummy_photo() # Take photo and store it in the /images directory
+    camera.take_photo() # Take photo and store it in the /images directory
     image_list = os.listdir('images')
     most_recent = open('images/' + image_list[-1], 'rb')
     ftp.storbinary('STOR ' + most_recent.name[7:], most_recent)

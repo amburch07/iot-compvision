@@ -37,19 +37,19 @@ class ProcessingHandler(FTPHandler):
         print("Received %s from %s" % (file, self.username))
         file_name = ImageMetadata.get_file_name(file)
         src = join('Web', 'images', file_name + ".png")
-        dst = join('Classify', 'datasets', 'test_pi_clean')
+        dst = join('Classify', 'datasets', 'test_pi')
         shutil.copy2(src, dst)
 
         #run classification
         print("Ready to classify")
 
-        """
 
         os.system(
-            "py classify/src/align/align_dataset_mtcnn.py classify/datasets/test_pi classify/datasets/test_pi_clean")
+            "py classify\\src\\align\\align_dataset_mtcnn.py classify\\datasets\\test_pi classify\\datasets\\test_pi_clean")
         os.system(
-            "py classify/src/classifier.py CLASSIFY classify/datasets/test_pi_clean classify/models/20180408-102900.pb classify/models/classifier.pkl > classify/output.txt")
-
+            "py classify\\src\\classifier.py CLASSIFY classify\\datasets\\test_pi_clean classify\\models\\20180408-102900.pb classify\\models\\classifier.pkl > classify\\output.txt")
+        os.system(
+            "py classify\\src\\classifier.py CLASSIFY classify\\datasets\\test_pi_clean classify\\models\\20180408-102900.pb classify\\models\\classifier.pkl")
 
 
         #retreive classification info
@@ -57,8 +57,7 @@ class ProcessingHandler(FTPHandler):
             lines = f.readlines()
         info = lines[-2].split()[1:]
         info = [info[0]+'_'+info[1], info[-1]]
-        
-        """
+
 
         #folder to hold pre-processed image and JSON
         folder_name = "Classify\\datasets\\test_pi_clean\\%s" % file_name
