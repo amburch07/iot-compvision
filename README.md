@@ -40,6 +40,12 @@
 4. On second command prompt/terminal, cd into `CameraServer` subfolder for  `WebSocketServer.py`
 5. Download `Brackets` application and open `Web` subfolder in application
 
+## To Run
+1. Run `ProcessingServer.py`
+2. Run `WebSocketServer.py`
+3. Go to brackets open index.html from left sidebar. Click lightening icon on right side.
+
+
 
 ## Ignore below this
 
