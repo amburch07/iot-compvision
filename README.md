@@ -38,7 +38,7 @@
 2. Download: https://drive.google.com/file/d/18bWyl_SieLtARy1tdjTIX25OAMIAVXHK/view?usp=sharing and place in `ProcessingServer/datasets` subfolder
 3. On command prompt/terminal, cd into `ProcessingServer/src` subfolder for `ProcessingServer.py`
 4. On second command prompt/terminal, cd into `CameraServer` subfolder for  `WebSocketServer.py`
-5. Download brackets and open `Web` subfolder
+5. Download `Brackets` application and open `Web` subfolder in application
 
 
 ## Ignore below this
