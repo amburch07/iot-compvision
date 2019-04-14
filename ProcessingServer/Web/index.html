@@ -14,72 +14,61 @@
     <script>
       //https://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery/18480589#18480589
      //https://stackoverflow.com/questions/492994/compare-two-dates-with-javascript
-       /* window.setInterval(
+       window.setInterval(
         function findImages() {
-            var folder = "./images/";
+            var folder = "./json/";
             var maxDate = null;
             var newestFile = null;
-            
+
             $.ajax({
                 url : folder,
                 success: function (data) {
                     $(data).find("a").attr("href", function (i, val) {
-                        if(val.match(/\.(jpe?g|png|gif)$/)) {
-                            var currentString = val.substring(val.lastIndexOf("/") + 1).replace(".png", "");
-                            
+                        if(val.match(/\.(json)$/)) {
+                            var currentString = val.substring(val.lastIndexOf("/") + 1).replace(".json", "");
+
                             var strings = currentString.split('-');
                             var currentDate = new Date(strings[0], strings[1] - 1, strings[2], strings[3], strings[4], strings[5]);
-                            console.log(currentDate);
+                            
+                           // console.log(maxDate + " : " + currentDate);
+                            //console.log(currentDate);
                             if(currentDate > maxDate) {
                                 maxDate = currentDate;
                                 newestFile = val;
+                                
                             }
-                               
+                            
+                            
                         }
                     });
+                   readTextFile(newestFile, function(text){
+                        var data = JSON.parse(text);
+                        console.log(data);
+                    });
                     var image = document.getElementById("face");
-                    image.src = newestFile;
+                    image.src = "./processed_data/cap/capture.png";
                 }
             });
-        }, 1000);  */
+        }, 10000);
+
+        function readTextFile(file, callback) {
+            var rawFile = new XMLHttpRequest();
+            rawFile.overrideMimeType("application/json");
+            rawFile.open("GET", file, true);
+            rawFile.onreadystatechange = function() {
+                if (rawFile.readyState === 4 && rawFile.status == "200") {
+                    callback(rawFile.responseText);
+                }
+            }
+            rawFile.send(null);
+        }
         
-        window.setInterval(
-            function findImages() {
-                var root = "./processed_data/";
-                var maxDate = null;
-                var newestFolder = null;
-                
-                $.ajax({
-                    url : root,
-                    success: function (data) {
-                        $(data).find("a").attr("href", function (i, val) {
-                            if(val.startsWith("\\p")) {
-                               var currentString = val.substring(val.lastIndexOf("\\") + 1);
-                               var strings = currentString.split('-');
-                               var currentDate = new Date(strings[0], strings[1] - 1, strings[2], strings[3], strings[4], strings[5]);
-                    
-                               if(currentDate > maxDate) {
-                                   maxDate = currentDate;
-                                   newestFolder = val;
-                               }
-                               
-                            }
-                        });
-                        console.log(newestFolder);
-                        //var image = document.getElementById("face");
-                        //image.src = newestFile;
-                    }
-                });
-                
-        }, 3000);
         
-        function testFunction(folderName) {
-             console.log(folderName);
-        };
+
     </script>
 
 
-  
+
  <script>
         // https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
 
@@ -87,7 +76,7 @@
                 var webSocket = new WebSocket("ws://127.0.0.1:5678/");
 
                 var sendStart = document.querySelector(".startButton");
-                
+
                 var closeConnection = document.querySelector(".closeButton");
 
                 sendStart.onclick = function(event) {
@@ -99,9 +88,9 @@
                         webSocket.send("{start}");
                     }, 60000);
                 }
-                
-                
-                
+
+
+
 
                 closeConnection.onclick = function(event) {
                     clearInterval(interval);
@@ -144,7 +133,7 @@
             <h2 class="display-4 text-center">Facial Recognition</h2>
             <hr>
             <h6 class="text-center">
-              Welcome to your security dashboard, this system will scan your face and detect wheather the security door will unlock or lock.
+              Welcome to your security dashboard! The system will scan your face and detect whether the security door will unlock or lock.
             </h6>
           </div>
         </div>

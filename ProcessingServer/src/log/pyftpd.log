@@ -2689,3 +2689,30 @@ Traceback (most recent call last):
   File "ProcessingServer.py", line 25, in on_disconnect
     print("%s Disconnected" % self.username)
 OSError: [Errno 5] Input/output error
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=14736 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:53324-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53324-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53324-[webcam] STOR /Users/burcha1/Documents/Git/iot-compvision/ProcessingServer/Web/images/2019-04-13-18-50-05.png completed=1 bytes=1220996 seconds=0.005
+INFO:pyftpdlib:127.0.0.1:53552-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53324-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53552-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53552-[webcam] STOR /Users/burcha1/Documents/Git/iot-compvision/ProcessingServer/Web/images/2019-04-13-19-06-40.png completed=1 bytes=1164722 seconds=0.005
+INFO:pyftpdlib:127.0.0.1:57411-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53552-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:57411-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:57411-[webcam] STOR /Users/burcha1/Documents/Git/iot-compvision/ProcessingServer/Web/images/2019-04-13-19-06-59.png completed=1 bytes=1286141 seconds=0.014
+INFO:pyftpdlib:127.0.0.1:57492-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:57411-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:57492-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:57492-[webcam] STOR /Users/burcha1/Documents/Git/iot-compvision/ProcessingServer/Web/images/2019-04-13-19-07-12.png completed=1 bytes=1358171 seconds=0.009
+INFO:pyftpdlib:127.0.0.1:57549-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:57492-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:57549-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:57549-[webcam] STOR /Users/burcha1/Documents/Git/iot-compvision/ProcessingServer/Web/images/2019-04-13-20-06-38.png completed=1 bytes=0 seconds=0.001
+INFO:pyftpdlib:127.0.0.1:55083-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:57549-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:55083-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:55083-[webcam] STOR /Users/burcha1/Documents/Git/iot-compvision/ProcessingServer/Web/images/2019-04-13-21-08-59.png completed=1 bytes=0 seconds=0.002

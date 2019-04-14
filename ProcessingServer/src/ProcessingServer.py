@@ -59,9 +59,9 @@ class ProcessingHandler(FTPHandler):
         #info = [info[0]+'_'+info[1], info[-1]]
 
         #folder to hold pre-processed image and JSON
-        folder_name = "classify/datasets/test_pi_clean/%s" % file_name
+        #folder_name = "classify/datasets/test_pi_clean/%s" % file_name
         #os.mkdir(folder_name)
-        DataStorage.create_json("Temp", 0, ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
+        #DataStorage.create_json("Temp", 0, ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
 
 
 
@@ -88,9 +88,9 @@ class ProcessingHandler(FTPHandler):
         #now json is created
 
 
-        with open('current_directory.txt', 'r+') as file:
-            file.truncate(0)  # Clear file
-            file.write(file_name)
+        #with open('current_directory.txt', 'r+') as file:
+        #    file.truncate(0)  # Clear file
+        #    file.write(file_name)
 
     def on_incomplete_file_received(self, file):
         print("Received incomplete file from %s" % self.username)
@@ -102,7 +102,7 @@ class ProcessingHandler(FTPHandler):
 def start_ftp():
     print("Starting FTP")
     authorizer = DummyAuthorizer()
-    authorizer.add_user("webcam", "1234", "./Web/images", perm="lw")
+    authorizer.add_user("webcam", "1234", "../Web/images", perm="lw")
     handler = ProcessingHandler
     handler.authorizer = authorizer
     server = FTPServer(('0.0.0.0', 21), handler)
