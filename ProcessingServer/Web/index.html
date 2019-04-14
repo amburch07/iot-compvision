@@ -24,21 +24,18 @@
                 url : folder,
                 success: function (data) {
                     $(data).find("a").attr("href", function (i, val) {
-                        if(val.match(/\.(json)$/)) {
+                        if(val.match("/\.(json)$/")) {
                             var currentString = val.substring(val.lastIndexOf("/") + 1).replace(".json", "");
 
                             var strings = currentString.split('-');
                             var currentDate = new Date(strings[0], strings[1] - 1, strings[2], strings[3], strings[4], strings[5]);
-                            
+
                            // console.log(maxDate + " : " + currentDate);
                             //console.log(currentDate);
                             if(currentDate > maxDate) {
                                 maxDate = currentDate;
                                 newestFile = val;
-                                
                             }
-                            
-                            
                         }
                     });
                    readTextFile(newestFile, function(text){
@@ -62,8 +59,8 @@
             }
             rawFile.send(null);
         }
-        
-        
+
+
 
     </script>
 
@@ -152,7 +149,7 @@
 
           <div class="row">
             <div class="col mx-auto">
-              <img id="face" src="images/2019-04-12-00-17-49.png" alt="face" title="face" width="450" height="550"/>
+              <img id="face" src="" alt="face" title="face" width="450" height="550"/>
             </div>
           </div>
 
