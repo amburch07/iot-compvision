@@ -127,7 +127,10 @@
                  readTextFile(newestFile, function(text){
                       var data = JSON.parse(text);
 
-                      appendMessageToLog(data)
+                      var message = "Classification: " + data.classification + " - " +
+                                    "Confidence: " + data.confidence
+
+                      appendMessageToLog(message)
                   });
                   var image = document.getElementById("face");
                   image.src = "./processed_data/cap/capture.png";
