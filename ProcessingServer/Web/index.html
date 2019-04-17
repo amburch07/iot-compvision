@@ -100,55 +100,18 @@
 
       logMessages.innerHTML = insertMessage + logMessages.innerHTML;
     }
-    window.setInterval(
-      function findImages() {
-          var folder = "./json/";
-          var maxDate = null;
-          var newestFile = null;
 
-          $.ajax({
-              url : folder,
-              success: function (data) {
-                  $(data).find("a").attr("href", function (i, val) {
-                      if(val.match("/\.(json)$/")) {
-                          var currentString = val.substring(val.lastIndexOf("/") + 1).replace(".json", "");
-
-                          var strings = currentString.split('-');
-                          var currentDate = new Date(strings[0], strings[1] - 1, strings[2], strings[3], strings[4], strings[5]);
-
-                         // console.log(maxDate + " : " + currentDate);
-                          //console.log(currentDate);
-                          if(currentDate > maxDate) {
-                              maxDate = currentDate;
-                              newestFile = val;
-                          }
-                      }
-                  });
-                 readTextFile(newestFile, function(text){
-                      var data = JSON.parse(text);
-
-                      var message = "Classification: " + data.classification + " - " +
-                                    "Confidence: " + data.confidence
-
-                      appendMessageToLog(message)
-                  });
-                  var image = document.getElementById("face");
-                  image.src = "./processed_data/cap/capture.png";
-              }
-          });
-      }, 10000);
-
-      function readTextFile(file, callback) {
-          var rawFile = new XMLHttpRequest();
-          rawFile.overrideMimeType("application/json");
-          rawFile.open("GET", file, true);
-          rawFile.onreadystatechange = function() {
-              if (rawFile.readyState === 4 && rawFile.status == "200") {
-                  callback(rawFile.responseText);
-              }
-          }
-          rawFile.send(null);
-      }
+    function readTextFile(file, callback) {
+        var rawFile = new XMLHttpRequest();
+        rawFile.overrideMimeType("application/json");
+        rawFile.open("GET", file, true);
+        rawFile.onreadystatechange = function() {
+            if (rawFile.readyState === 4 && rawFile.status == "200") {
+                callback(rawFile.responseText);
+            }
+        }
+        rawFile.send(null);
+    }
 
   </script>
 
@@ -178,6 +141,43 @@
 
         webSocket.onmessage = function(event) {
             console.log("Received message: " + event.data)
+
+            function findImages() {
+                var folder = "./json/";
+                var maxDate = null;
+                var newestFile = null;
+
+                $.ajax({
+                    url : folder,
+                    success: function (data) {
+                        $(data).find("a").attr("href", function (i, val) {
+                            if(val.match("/\.(json)$/")) {
+                                var currentString = val.substring(val.lastIndexOf("/") + 1).replace(".json", "");
+
+                                var strings = currentString.split('-');
+                                var currentDate = new Date(strings[0], strings[1] - 1, strings[2], strings[3], strings[4], strings[5]);
+
+                               // console.log(maxDate + " : " + currentDate);
+                                //console.log(currentDate);
+                                if(currentDate > maxDate) {
+                                    maxDate = currentDate;
+                                    newestFile = val;
+                                }
+                            }
+                        });
+                       readTextFile(newestFile, function(text){
+                            var data = JSON.parse(text);
+
+                            var message = "Classification: " + data.classification + " - " +
+                                          "Confidence: " + data.confidence
+
+                            appendMessageToLog(message)
+                        });
+                        var image = document.getElementById("face");
+                        image.src = "./processed_data/cap/capture.png";
+                    }
+                });
+            }
         }
 
         webSocket.onerror = function(event) {
