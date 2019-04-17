@@ -35,9 +35,19 @@
 
 ## Set Up
 1. Check Python requirements
-2. Download: https://drive.google.com/file/d/18bWyl_SieLtARy1tdjTIX25OAMIAVXHK/view?usp=sharing and place in `ProcessingServer/classify/datasets` subfolder
-3. On command prompt/terminal, cd into `ProcessingServer/classify` subfolder
-4. Run training and test sets via Python commands below
+2. Download: https://drive.google.com/file/d/18bWyl_SieLtARy1tdjTIX25OAMIAVXHK/view?usp=sharing and place in `ProcessingServer/datasets` subfolder
+3. On command prompt/terminal, cd into `ProcessingServer/src` subfolder for `ProcessingServer.py`
+4. On second command prompt/terminal, cd into `CameraServer` subfolder for  `WebSocketServer.py`
+5. Download `Brackets` application and open `Web` subfolder in application
+
+## To Run
+1. Run `ProcessingServer.py`
+2. Run `WebSocketServer.py`
+3. Go to brackets open index.html from left sidebar. Click lightening icon on right side.
+
+
+
+## Ignore below this
 
 #### Align Training Set (Isolate Face)
 `python3 -W ignore src/align/align_dataset_mtcnn.py datasets/train datasets/train_clean`
@@ -57,5 +67,4 @@ Images must be saved in `datasets/test_pi` in `Unknown` subfolder
 Align input: `python3 -W ignore src/align/align_dataset_mtcnn.py datasets/test_pi datasets/test_pi_clean`
 
 `python -W ignore src/classifier.py CLASSIFY datasets/test_pi_clean models/20180408-102900.pb models/classifier.pkl > output.txt`
-
 
