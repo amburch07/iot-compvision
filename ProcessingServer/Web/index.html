@@ -3,112 +3,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <title>YourSecurityFeed</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>YourSecurityFeed</title>
-      <link href="styles/styles.css" type="text/css" rel="stylesheet" />
-
-
-    <script>
-      //https://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery/18480589#18480589
-     //https://stackoverflow.com/questions/492994/compare-two-dates-with-javascript
-       window.setInterval(
-        function findImages() {
-            var folder = "./json/";
-            var maxDate = null;
-            var newestFile = null;
-
-            $.ajax({
-                url : folder,
-                success: function (data) {
-                    $(data).find("a").attr("href", function (i, val) {
-                        if(val.match(/\.(json)$/)) {
-                            var currentString = val.substring(val.lastIndexOf("/") + 1).replace(".json", "");
-
-                            var strings = currentString.split('-');
-                            var currentDate = new Date(strings[0], strings[1] - 1, strings[2], strings[3], strings[4], strings[5]);
-                            
-                           // console.log(maxDate + " : " + currentDate);
-                            //console.log(currentDate);
-                            if(currentDate > maxDate) {
-                                maxDate = currentDate;
-                                newestFile = val;
-                                
-                            }
-                            
-                            
-                        }
-                    });
-                   readTextFile(newestFile, function(text){
-                        var data = JSON.parse(text);
-                        console.log(data);
-                    });
-                    var image = document.getElementById("face");
-                    image.src = "./processed_data/cap/capture.png";
-                }
-            });
-        }, 10000);
-
-        function readTextFile(file, callback) {
-            var rawFile = new XMLHttpRequest();
-            rawFile.overrideMimeType("application/json");
-            rawFile.open("GET", file, true);
-            rawFile.onreadystatechange = function() {
-                if (rawFile.readyState === 4 && rawFile.status == "200") {
-                    callback(rawFile.responseText);
-                }
-            }
-            rawFile.send(null);
-        }
-        
-        
-
-    </script>
-
-
-
- <script>
-        // https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
-
-            function startConnection() {
-                var webSocket = new WebSocket("ws://127.0.0.1:5678/");
-
-                var sendStart = document.querySelector(".startButton");
-
-                var closeConnection = document.querySelector(".closeButton");
-
-                sendStart.onclick = function(event) {
-                    console.log("Clicked");
-                    var i = 0;
-                    interval = setInterval(function () {
-                        i++;
-                        console.log("Sending");
-                        webSocket.send("{start}");
-                    }, 60000);
-                }
-
-
-
-
-                closeConnection.onclick = function(event) {
-                    clearInterval(interval);
-                }
-
-                webSocket.onmessage = function(event) {
-                    console.log("Received message: " + event.data)
-                }
-
-                webSocket.onerror = function(event) {
-                    console.log("Error: Couldn't connect!")
-                    // Display error on page
-                }
-        };
-
-
-
-    </script>
+  <link href="styles/styles.css" type="text/css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body onload="startConnection()">
@@ -152,7 +52,7 @@
 
           <div class="row">
             <div class="col mx-auto">
-              <img id="face" src="images/2019-04-12-00-17-49.png" alt="face" title="face" width="450" height="550"/>
+              <img id="face" src="" alt="face" title="face" width="450" height="550"/>
             </div>
           </div>
 
@@ -184,6 +84,11 @@
         }, 2000)
     }
 
+    //debugLog()
+  </script>
+  <script>
+    //https://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery/18480589#18480589
+    //https://stackoverflow.com/questions/492994/compare-two-dates-with-javascript
     // prepends the log messages (so the newest show at the top)
     function appendMessageToLog(message) {
       var d = new Date()
@@ -196,7 +101,90 @@
       logMessages.innerHTML = insertMessage + logMessages.innerHTML;
     }
 
-    //debugLog()
+    function readTextFile(file, callback) {
+        var rawFile = new XMLHttpRequest();
+        rawFile.overrideMimeType("application/json");
+        rawFile.open("GET", file, true);
+        rawFile.onreadystatechange = function() {
+            if (rawFile.readyState === 4 && rawFile.status == "200") {
+                callback(rawFile.responseText);
+            }
+        }
+        rawFile.send(null);
+    }
+
+  </script>
+
+  <script>
+    // https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
+
+    function startConnection() {
+        var webSocket = new WebSocket("ws://127.0.0.1:5678/");
+
+        var sendStart = document.querySelector(".startButton");
+
+        var closeConnection = document.querySelector(".closeButton");
+
+        sendStart.onclick = function(event) {
+            console.log("Clicked");
+            var i = 0;
+            interval = setInterval(function () {
+                i++;
+                console.log("Sending");
+                webSocket.send("{start}");
+            }, 60000);
+        }
+
+        closeConnection.onclick = function(event) {
+            clearInterval(interval);
+        }
+
+        webSocket.onmessage = function(event) {
+            console.log("Received message: " + event.data)
+
+            function findImages() {
+                var folder = "./json/";
+                var maxDate = null;
+                var newestFile = null;
+
+                $.ajax({
+                    url : folder,
+                    success: function (data) {
+                        $(data).find("a").attr("href", function (i, val) {
+                            if(val.match("/\.(json)$/")) {
+                                var currentString = val.substring(val.lastIndexOf("/") + 1).replace(".json", "");
+
+                                var strings = currentString.split('-');
+                                var currentDate = new Date(strings[0], strings[1] - 1, strings[2], strings[3], strings[4], strings[5]);
+
+                               // console.log(maxDate + " : " + currentDate);
+                                //console.log(currentDate);
+                                if(currentDate > maxDate) {
+                                    maxDate = currentDate;
+                                    newestFile = val;
+                                }
+                            }
+                        });
+                       readTextFile(newestFile, function(text){
+                            var data = JSON.parse(text);
+
+                            var message = "Classification: " + data.classification + " - " +
+                                          "Confidence: " + data.confidence
+
+                            appendMessageToLog(message)
+                        });
+                        var image = document.getElementById("face");
+                        image.src = "./processed_data/cap/capture.png";
+                    }
+                });
+            }
+        }
+
+        webSocket.onerror = function(event) {
+            console.log("Error: Couldn't connect!")
+            // Display error on page
+        }
+    };
   </script>
 <!--
 For reference for logging messages
