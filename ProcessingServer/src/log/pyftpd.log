@@ -5347,22 +5347,3 @@ Traceback (most recent call last):
     with open(file_name, 'w') as write_file:
 FileNotFoundError: [Errno 2] No such file or directory: 'classify/datasets/test_pi_clean//Users/burcha1/Documents/Git/iot-compvision/ProcessingServer/Web/images/2019-04-13-11-36-01//Users/burcha1/Documents/Git/iot-compvision/ProcessingServer/Web/images/2019-04-13-11-36-01.json'
 INFO:pyftpdlib:127.0.0.1:57937-[webcam] FTP session closed (disconnect).
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=10932 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:127.0.0.1:58938-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:58938-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:58938-[webcam] STOR C:\Users\wongt1\Documents\GitHub\iot-compvision\ProcessingServer\Web\images\2019-04-14-00-09-52.png completed=1 bytes=364510 seconds=0.0
-INFO:pyftpdlib:127.0.0.1:59182-[] FTP session opened (connect)
-INFO:pyftpdlib:127.0.0.1:58938-[webcam] FTP session closed (disconnect).
-INFO:pyftpdlib:127.0.0.1:59182-[webcam] USER 'webcam' logged in.
-INFO:pyftpdlib:127.0.0.1:59182-[webcam] STOR C:\Users\wongt1\Documents\GitHub\iot-compvision\ProcessingServer\Web\images\2019-04-14-00-10-52.png completed=1 bytes=420400 seconds=0.0
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=17312 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
-INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=27724 <<<
-INFO:pyftpdlib:concurrency model: async
-INFO:pyftpdlib:masquerade (NAT) address: None
-INFO:pyftpdlib:passive ports: None
