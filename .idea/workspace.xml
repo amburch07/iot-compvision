@@ -2,6 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9938d99d-d8e6-4dbb-b876-26d1c365156e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/images/2019-04-13-20-06-38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/images/2019-04-13-21-08-59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/images/clean/bounding_boxes_07812.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/images/clean/bounding_boxes_14285.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/images/clean/bounding_boxes_15615.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/images/clean/bounding_boxes_24499.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/images/clean/bounding_boxes_30960.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/images/clean/bounding_boxes_45235.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/images/clean/bounding_boxes_67779.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/images/clean/bounding_boxes_83739.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/images/clean/revision_info.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessingServer/Web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/Web/processed_data/cap/capture.png" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessingServer/Web/processed_data/cap/capture.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessingServer/src/log/pyftpd.log" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessingServer/src/log/pyftpd.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProcessingServer/src/objectDetectionTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessingServer/src/objectDetectionTest.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
@@ -13,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CameraServer/camera.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+            <state relative-caret-position="506">
+              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -25,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProcessingServer/src/objectDetectionTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="262" column="61" selection-start-line="262" selection-start-column="61" selection-end-line="262" selection-end-column="61" />
+            <state relative-caret-position="316">
+              <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -37,7 +52,22 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProcessingServer/src/ProcessingServer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>:</find>
+      <find>json</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="67" />
     <option name="y" value="27" />
     <option name="width" value="2094" />
@@ -64,19 +94,30 @@
         <subPane>
           <expand>
             <path>
-              <item name="iot-compvision" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-compvision" type="462c0819:PsiDirectoryNode" />
+              <item name="iot-final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-final" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iot-compvision" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-compvision" type="462c0819:PsiDirectoryNode" />
+              <item name="iot-final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-final" type="462c0819:PsiDirectoryNode" />
+              <item name="CameraServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-final" type="462c0819:PsiDirectoryNode" />
               <item name="ProcessingServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iot-compvision" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iot-compvision" type="462c0819:PsiDirectoryNode" />
+              <item name="iot-final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-final" type="462c0819:PsiDirectoryNode" />
               <item name="ProcessingServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-final" type="462c0819:PsiDirectoryNode" />
+              <item name="ProcessingServer" type="462c0819:PsiDirectoryNode" />
+              <item name="Web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -104,6 +145,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.WebSocketServer">
+    <configuration name="ProcessingServer (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iot-compvision" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProcessingServer/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProcessingServer/src/ProcessingServer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ProcessingServer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="iot-compvision" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,6 +213,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.WebSocketServer" />
+        <item itemvalue="Python.ProcessingServer (1)" />
         <item itemvalue="Python.ProcessingServer" />
       </list>
     </recent_temporary>
@@ -173,10 +236,10 @@
     <option name="totallyTimeSpent" value="1620000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="27" width="2094" height="1294" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976452" visible="true" weight="0.2539836" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976452" visible="true" weight="0.2544784" />
       <window_info id="Structure" order="1" sideWeight="0.5023548" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5011013" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Python Console" order="0" sideWeight="0.79140127" side_tool="true" weight="0.33516484" />
@@ -188,7 +251,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.20859873" weight="0.2354788" />
       <window_info anchor="bottom" id="TODO" order="8" sideWeight="0.50318474" side_tool="true" weight="0.33546326" />
-      <window_info active="true" anchor="bottom" x="468" y="592" width="1256" height="420" id="Run" order="9" sideWeight="0.5007962" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" x="468" y="592" width="1256" height="420" id="Run" order="9" sideWeight="0.5007962" side_tool="true" weight="0.1744312" />
       <window_info anchor="bottom" auto_hide="true" x="112" y="758" width="1250" height="290" id="Terminal" order="10" sideWeight="0.5931529" side_tool="true" weight="0.09431021" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -208,16 +271,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ProcessingServer/ProcessingServer.py" />
-    <entry file="file://$PROJECT_DIR$/CameraServer/camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CameraServer/WebSocketServer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -232,12 +285,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessingServer/src/ProcessingServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ProcessingServer/src/objectDetectionTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="262" column="61" selection-start-line="262" selection-start-column="61" selection-end-line="262" selection-end-column="61" />
+        <state relative-caret-position="316">
+          <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CameraServer/camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>

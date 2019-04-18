@@ -77,45 +77,48 @@
 
   <footer></footer>
 
-  <script type="text/javascript">
+  <!--<script type="text/javascript">
     function debugLog() {
         setInterval(function(){
-          appendMessageToLog('woah')
+          prependMessageToLog('woah')
         }, 2000)
     }
 
     //debugLog()
-  </script>
-  <script>
-    //https://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery/18480589#18480589
-    //https://stackoverflow.com/questions/492994/compare-two-dates-with-javascript
+  </script> -->
+    
+    
+    <script>
     // prepends the log messages (so the newest show at the top)
-    function appendMessageToLog(message) {
-      var d = new Date()
-
-      var logMessages = document.getElementById('log-messages')
-      var currentTime = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + " - "
-
-      var insertMessage = "<p>" + currentTime + message + "</p><br/>"
-
-      logMessages.innerHTML = insertMessage + logMessages.innerHTML;
+    function prependMessageToLog(message) {
+        var d = new Date()
+        var logMessages = document.getElementById('log-messages')
+        var currentTime = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + " - "
+        var insertMessage = "<p>" + currentTime + message + "</p><br/>"
+        logMessages.innerHTML = insertMessage + logMessages.innerHTML;
     }
+    </script> 
+    
+    <script>
+        var currentJson = null;       
+        window.setInterval(
+        function refreshLogAndImage() {
+            // if json updated, log the new info
+            var jsonPath = "./json/classification.json";
+            $.getJSON(jsonPath, function(json) {
+                if (currentJson === null || (json['classification'] !== currentJson['classification']) || (json['confidence'] !== currentJson['confidence'])) { 
+                    currentJson = json;
+                    prependMessageToLog("Classification: " + currentJson['classification'] + ", Confidence: " + currentJson['confidence']);
+                }                    
+            });
 
-    function readTextFile(file, callback) {
-        var rawFile = new XMLHttpRequest();
-        rawFile.overrideMimeType("application/json");
-        rawFile.open("GET", file, true);
-        rawFile.onreadystatechange = function() {
-            if (rawFile.readyState === 4 && rawFile.status == "200") {
-                callback(rawFile.responseText);
-            }
-        }
-        rawFile.send(null);
-    }
+            // refresh image
+            var imagePath = "./processed_data/cap/capture.png"
+            document.getElementById("face").src = imagePath + "?" + new Date().getTime();        
+        }, 1000);
+    </script>
 
-  </script>
-
-  <script>
+    <script>
     // https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
 
     function startConnection() {
@@ -141,43 +144,6 @@
 
         webSocket.onmessage = function(event) {
             console.log("Received message: " + event.data)
-
-            function findImages() {
-                var folder = "./json/";
-                var maxDate = null;
-                var newestFile = null;
-
-                $.ajax({
-                    url : folder,
-                    success: function (data) {
-                        $(data).find("a").attr("href", function (i, val) {
-                            if(val.match("/\.(json)$/")) {
-                                var currentString = val.substring(val.lastIndexOf("/") + 1).replace(".json", "");
-
-                                var strings = currentString.split('-');
-                                var currentDate = new Date(strings[0], strings[1] - 1, strings[2], strings[3], strings[4], strings[5]);
-
-                               // console.log(maxDate + " : " + currentDate);
-                                //console.log(currentDate);
-                                if(currentDate > maxDate) {
-                                    maxDate = currentDate;
-                                    newestFile = val;
-                                }
-                            }
-                        });
-                       readTextFile(newestFile, function(text){
-                            var data = JSON.parse(text);
-
-                            var message = "Classification: " + data.classification + " - " +
-                                          "Confidence: " + data.confidence
-
-                            appendMessageToLog(message)
-                        });
-                        var image = document.getElementById("face");
-                        image.src = "./processed_data/cap/capture.png";
-                    }
-                });
-            }
         }
 
         webSocket.onerror = function(event) {
@@ -185,35 +151,6 @@
             // Display error on page
         }
     };
-  </script>
-<!--
-For reference for logging messages
-
-<table class="table2">
-<tr>
-<th>User Alerts</th>
-</tr>
-
-<tr>
-<td>Your security system is on</td>
-</tr>
-
-<tr>
-<td>An object has been detected</td>
-</tr>
-
-<tr>
-<td>The object is of class Ari_Burch</td>
-</tr>
-
-<tr>
-<td>The Ari_Burch is approved to enter</td>
-</tr>
-
-<tr>
-<td class="td2">Door Unlocked</td>
-</tr>
-</table>
--->
+    </script>
 </body>
 </html>

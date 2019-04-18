@@ -5347,3 +5347,7 @@ Traceback (most recent call last):
     with open(file_name, 'w') as write_file:
 FileNotFoundError: [Errno 2] No such file or directory: 'classify/datasets/test_pi_clean//Users/burcha1/Documents/Git/iot-compvision/ProcessingServer/Web/images/2019-04-13-11-36-01//Users/burcha1/Documents/Git/iot-compvision/ProcessingServer/Web/images/2019-04-13-11-36-01.json'
 INFO:pyftpdlib:127.0.0.1:57937-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=23184 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None

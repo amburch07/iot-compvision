@@ -233,7 +233,8 @@ while (cap.isOpened()):
                 #folder to hold pre-processed image and JSON
                 #folder_name = "Classify\\datasets\\test_pi_clean\\%s" % file_name
                 #os.mkdir(folder_name)
-                anything = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
+                #anything = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
+                anything = "classification"
                 dataDirjson= (".." + "%s" + "Web" + "%s") % (slash, slash)
                 capDatajson = (dataDirjson + "%s" + "json" + "%s" + "%s" +".json") % (slash,slash,anything)
                 DataStorage.create_json(results[0], results[1], capDatajson)
