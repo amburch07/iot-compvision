@@ -44,10 +44,14 @@
 2. On second command prompt/terminal, cd into `CameraServer` subfolder for  `WebSocketServer.py`
 3. On third prompt/terminal, again cd into `ProcessingServer/src` subfolder for `objectDetectionTest.py`
 4. Download `Brackets` application and open `Web` subfolder in application
-5. Run `ProcessingServer.py` (for Mac/Linex use sudo python3, for Windows, py)
+5. Run `ProcessingServer.py` (for Mac/Linux use sudo python3, for Windows, py)
 6. Run `WebSocketServer.py`
 7. Run `objectDetectionTest.py` to jumpstart python3 app (you won't need it after that)
 8. Go to brackets open index.html from left sidebar. Click lightening icon on right side.
+
+## Notes
+
+If you are on a Mac or Linux and running the program multiple times, run `sudo lsof -i :21`, and `sudo lsof -i :5678`, collect the PIDs, and run `sudo kill -9 _PID_`
 
 ### Demo Video
 
