@@ -1,4 +1,5 @@
 Python Packages:
+python version 3.6.8 (not 3.7, run anaconda environment if neccessary)
 tensorflow==1.7
 scipy
 scikit-learn
