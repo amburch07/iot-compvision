@@ -8,8 +8,6 @@ from io import StringIO
 import numpy as np
 import DataStorage
 from datetime import datetime
-import paho.mqtt.client as mqtt
-import paho.mqtt.publish as publish
 
 class ListStream:
     def __init__(self):
@@ -150,11 +148,10 @@ while (cap.isOpened()):
     # detectMultiScale() returns a rectangle with coordinates (x,y,w,h) around detected face
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
-    # Display text to bframe in opencv if no face detected - turn led light for raspberry pi off
+    # Display text to bframe in opencv if no face detected
     if (len(faces) != 1):
         font = cv2.FONT_HERSHEY_SIMPLEX
         cv2.putText(bframe, 'ADJUST FACE PLEASE', (20, 250), font, 1, (0, 0, 255), 3, cv2.LINE_AA)
-        publish.single(topic='ledStatus', payload='Off', hostname='broker.hivemq.com', protocol=mqtt.MQTTv31)
 
     # AN - Draw bounding box
     for(x,y,w,h) in faces:
@@ -234,11 +231,12 @@ while (cap.isOpened()):
                 #folder_name = "Classify\\datasets\\test_pi_clean\\%s" % file_name
                 #os.mkdir(folder_name)
                 #anything = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
-                anything = "classification"
+                anything='classification'
                 dataDirjson= (".." + "%s" + "Web" + "%s") % (slash, slash)
                 capDatajson = (dataDirjson + "%s" + "json" + "%s" + "%s" +".json") % (slash,slash,anything)
                 DataStorage.create_json(results[0], results[1], capDatajson)
 
+                # ADD MQTT REQUEST HERE
 
                 # close window if already exists
                 if name != "":
@@ -259,9 +257,6 @@ while (cap.isOpened()):
                 cv2.namedWindow(name, cv2.WINDOW_NORMAL)
                 cv2.resizeWindow(name, newWidth, newHeight)
                 cv2.imshow(name, im)
-
-                # turn on green led for raspberry pi
-                publish.single(topic='ledStatus', payload='On', hostname='broker.hivemq.com', protocol=mqtt.MQTTv31)
             else:
                 print("Unknown")
 

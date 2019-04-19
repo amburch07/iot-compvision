@@ -83,11 +83,10 @@
           prependMessageToLog('woah')
         }, 2000)
     }
-
     //debugLog()
   </script> -->
-    
-    
+
+
     <script>
     // prepends the log messages (so the newest show at the top)
     function prependMessageToLog(message) {
@@ -97,37 +96,32 @@
         var insertMessage = "<p>" + currentTime + message + "</p><br/>"
         logMessages.innerHTML = insertMessage + logMessages.innerHTML;
     }
-    </script> 
-    
+    </script>
+
     <script>
-        var currentJson = null;       
+        var currentJson = null;
         window.setInterval(
         function refreshLogAndImage() {
             // if json updated, log the new info
             var jsonPath = "./json/classification.json";
             $.getJSON(jsonPath, function(json) {
-                if (currentJson === null || (json['classification'] !== currentJson['classification']) || (json['confidence'] !== currentJson['confidence'])) { 
+                if (currentJson === null || (json['classification'] !== currentJson['classification']) || (json['confidence'] !== currentJson['confidence'])) {
                     currentJson = json;
                     prependMessageToLog("Classification: " + currentJson['classification'] + ", Confidence: " + currentJson['confidence']);
-                }                    
+                }
             });
-
             // refresh image
             var imagePath = "./processed_data/cap/capture.png"
-            document.getElementById("face").src = imagePath + "?" + new Date().getTime();        
+            document.getElementById("face").src = imagePath + "?" + new Date().getTime();
         }, 1000);
     </script>
 
     <script>
     // https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
-
     function startConnection() {
         var webSocket = new WebSocket("ws://127.0.0.1:5678/");
-
         var sendStart = document.querySelector(".startButton");
-
         var closeConnection = document.querySelector(".closeButton");
-
         sendStart.onclick = function(event) {
             console.log("Clicked");
             var i = 0;
@@ -137,15 +131,12 @@
                 webSocket.send("{start}");
             }, 60000);
         }
-
         closeConnection.onclick = function(event) {
             clearInterval(interval);
         }
-
         webSocket.onmessage = function(event) {
             console.log("Received message: " + event.data)
         }
-
         webSocket.onerror = function(event) {
             console.log("Error: Couldn't connect!")
             // Display error on page
