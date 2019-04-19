@@ -33,38 +33,24 @@
 
 
 
-## Set Up
-1. Check Python requirements
-2. Download: https://drive.google.com/file/d/18bWyl_SieLtARy1tdjTIX25OAMIAVXHK/view?usp=sharing and place in `ProcessingServer/datasets` subfolder
-3. On command prompt/terminal, cd into `ProcessingServer/src` subfolder for `ProcessingServer.py`
-4. On second command prompt/terminal, cd into `CameraServer` subfolder for  `WebSocketServer.py`
-5. Download `Brackets` application and open `Web` subfolder in application
+## Getting Started
 
-## To Run
-1. Run `ProcessingServer.py`
-2. Run `WebSocketServer.py`
-3. Go to brackets open index.html from left sidebar. Click lightening icon on right side.
+### Install
+1. Check Python requirements (see requirements.txt)
+2. Install `brackets` application
 
+### Run
+1. On command prompt/terminal, cd into `ProcessingServer/src` subfolder for `ProcessingServer.py`
+2. On second command prompt/terminal, cd into `CameraServer` subfolder for  `WebSocketServer.py`
+3. On third prompt/terminal, again cd into `ProcessingServer/src` subfolder for `objectDetectionTest.py`
+4. Download `Brackets` application and open `Web` subfolder in application
+5. Run `ProcessingServer.py` (for Mac/Linex use sudo python3, for Windows, py)
+6. Run `WebSocketServer.py`
+7. Run `objectDetectionTest.py` to jumpstart python3 app (you won't need it after that)
+8. Go to brackets open index.html from left sidebar. Click lightening icon on right side.
 
+### Demo Video
 
-## Ignore below this
+https://youtu.be/4yIFA8Dnd2I
 
-#### Align Training Set (Isolate Face)
-`python3 -W ignore src/align/align_dataset_mtcnn.py datasets/train datasets/train_clean`
-
-#### Train Classifier
-`python3 -W ignore src/classifier.py TRAIN datasets/train_clean /models/20180408-102900.pb models/classifier.pkl --batch_size 25`
-
-#### Align Test
-`python3 -W ignore src/align/align_dataset_mtcnn.py datasets/test datasets/test_clean`
-
-#### Classification of Test Set
-`python3 -W ignore src/classifier.py CLASSIFY datasets/test_clean models/20180408-102900.pb models/classifier.pkl`
-
-#### To Classify Camera Inputs (separate from full networking application - only run to see classifier by itself)
-Images must be saved in `datasets/test_pi` in `Unknown` subfolder
-
-Align input: `python3 -W ignore src/align/align_dataset_mtcnn.py datasets/test_pi datasets/test_pi_clean`
-
-`python -W ignore src/classifier.py CLASSIFY datasets/test_pi_clean models/20180408-102900.pb models/classifier.pkl > output.txt`
 
