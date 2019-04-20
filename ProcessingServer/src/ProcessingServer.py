@@ -36,61 +36,13 @@ class ProcessingHandler(FTPHandler):
     def on_file_received(self, file):
         print("Received %s from %s" % (file, self.username))
         file_name = ImageMetadata.get_file_name(file)
-        #src = join('Web', 'images', file_name + ".png")
-        #dst = join('Classify', 'datasets', 'test_pi')
-        #shutil.copy2(src, dst)
 
         #run classification
         print("Ready to classify")
 
-        #os.system(
-        #    "python3 -W ignore classify/src/align/align_dataset_mtcnn.py Web/images Web/images/clean")
-        #os.system(
-        #    "python3 -W ignore classify/src/classifier.py CLASSIFY Web/images/clean classify/models/20180408-102900.pb classify/models/classifier.pkl > classify/output.txt")
-
         os.system(
             "python3 objectDetectionTest.py"
         )
-
-        #retreive classification info
-        #with open("classify/output.txt") as f:
-        #    lines = f.readlines()
-        #info = lines[-2].split()[1:]
-        #info = [info[0]+'_'+info[1], info[-1]]
-
-        #folder to hold pre-processed image and JSON
-        #folder_name = "classify/datasets/test_pi_clean/%s" % file_name
-        #os.mkdir(folder_name)
-        #DataStorage.create_json("Temp", 0, ImageMetadata.get_date_taken(file_name), folder_name + "/" + file_name + ".json")
-
-
-
-
-        #os.system(
-        #    "py classify\\src\\align\\align_dataset_mtcnn.py classify\\datasets\\test_pi classify\\datasets\\test_pi_clean")
-        #os.system(
-        #    "py classify\\src\\classifier.py CLASSIFY classify\\datasets\\test_pi_clean classify\\models\\20180408-102900.pb classify\\models\\classifier.pkl > classify\\output.txt")
-        #os.system(
-        #    "py classify\\src\\classifier.py CLASSIFY classify\\datasets\\test_pi_clean classify\\models\\20180408-102900.pb classify\\models\\classifier.pkl")
-
-
-        #retreive classification info
-        #with open("classify\\output.txt") as f:
-        #    lines = f.readlines()
-        #info = lines[-2].split()[1:]
-        #info = [info[0]+'_'+info[1], info[-1]]
-
-        #folder to hold pre-processed image and JSON
-        #folder_name = "Classify\\datasets\\test_pi_clean\\%s" % file_name
-        #os.mkdir(folder_name)
-        #DataStorage.create_json("Temp", 0, ImageMetadata.get_date_taken(file_name), folder_name + "\\" + file_name + ".json")
-
-        #now json is created
-
-
-        #with open('current_directory.txt', 'r+') as file:
-        #    file.truncate(0)  # Clear file
-        #    file.write(file_name)
 
     def on_incomplete_file_received(self, file):
         print("Received incomplete file from %s" % self.username)
