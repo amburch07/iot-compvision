@@ -109,21 +109,18 @@
 
     <script>
     // https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
-    function startConnection() {
-        var webSocket = new WebSocket("ws://127.0.0.1:5678/");
-        var sendStart = document.querySelector(".startButton");
-        var closeConnection = document.querySelector(".closeButton");
         sendStart.onclick = function(event) {
-            console.log("Clicked");
+            // send command to take photo
+            webSocket.send("{start}");
             var i = 0;
             interval = setInterval(function () {
                 i++;
-                console.log("Sending");
+                console.log("Sending start command...");
                 webSocket.send("{start}");
-            }, 60000);
+            }, 5000); // resend command every 5 seconds
         }
         closeConnection.onclick = function(event) {
-            clearInterval(interval);
+            clearInterval(interval); // terminate loop in .onclick function
         }
         webSocket.onmessage = function(event) {
             console.log("Received message: " + event.data)
