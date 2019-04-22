@@ -31,6 +31,18 @@
 
 - Chris Villamarin
 
+## Features/Project Flow
+
+1. Captures video and retrieves individual image frames
+2. Sends images to server for processing. 
+3. Performances face detection, draws bounding boxes, aligns/crops image
+4. Sends aligned images to display on webpage
+5. Recognizes and classifies faces from trained model
+6. Sends classification and confidence to display on webpage
+7. Checks user access and sends alert to Raspberry Pi
+8. Flash green or red LED light to simulate security system
+9. Retrain or update model to include new users or other datasets
+10. Dynamically updates website as new images/classifications are made
 
 
 ## Getting Started
@@ -53,8 +65,15 @@
 
 If you are on a Mac or Linux and running the program multiple times, run `sudo lsof -i :21`, and `sudo lsof -i :5678`, collect the PIDs, and run `sudo kill -9 _PID_`
 
-### Demo Video
+### Demo Videos
+
+Demo to display CameraServer (laptop) interacting with WebServer to display PreprocessingServer results
 
 https://youtu.be/4yIFA8Dnd2I
 
+Demo to display CameraServer (laptop) interacting with ProcessingServer (also laptop) - which does image segmentation, then interacting with server on raspberry pi:
+
+https://www.youtube.com/watch?v=tCcnDnl-gE0
+
+Note: Demos were created with multiple faces to show robustness of our project (with help from friends who allowed us to train on them). 
 
