@@ -83,52 +83,6 @@ weight = modelDir + "model_small.yaml"  # local store weights
 # Store photo taken from webcam
 saved = ("%s" + "%s" + "cap" + "%s" + "%s") % (capData, slash, slash, "capture.jpg")
 
-'''
-# if aligned folders exist, delete it, and then recreate
-if os.path.isdir(trainDataAligned):
-	shutil.rmtree(trainDataAligned)
-os.makedirs(trainDataAligned)
-print(trainDataAligned + "created")
-
-if os.path.isdir(testDataAligned):
-	shutil.rmtree(testDataAligned)
-os.makedirs(testDataAligned)
-print(testDataAligned + "created")
-
-if os.path.isdir(capDataAligned):
-	shutil.rmtree(capDataAligned)
-os.makedirs(capDataAligned)
-print(capDataAligned + "created")
-
-
-# align train dataset
-facenet_recognition.align_input(trainData, trainDataAligned)
-print("Train data aligned")
-
-# train classifier from trainAligned
-facenet_recognition.create_classifier(trainDataAligned, model, classifier, weight, test_classifier_type)
-print("Classifier trained")
-
-# align data in test
-facenet_recognition.align_input(testData, testDataAligned)
-#redirect output from testing classifier to variable
-sys.stdout = output = ListStream()
-
-# test classifier
-facenet_recognition.test_classifier(
-            testDataAligned, model, classifier, weight, test_classifier_type)
-
-# parse last output -> [first, last, accuracy]
-result = result = output.data[-4].split(" ")[-3:]
-name = "%s_%s" % (result[0], result[1].replace(":", ""))
-
-# turn on stdout
-sys.stdout = old_stdout
-
-print("%s %s" % (name, result[-1]))
-
-
-'''
 
 # AN- FACE DETECTION WITH HAAR CASCADE
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
@@ -234,11 +188,12 @@ while (cap.isOpened()):
                 #folder_name = "Classify\\datasets\\test_pi_clean\\%s" % file_name
                 #os.mkdir(folder_name)
                 #anything = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
-                anything = "classification"
+                anything='classification'
                 dataDirjson= (".." + "%s" + "Web" + "%s") % (slash, slash)
                 capDatajson = (dataDirjson + "%s" + "json" + "%s" + "%s" +".json") % (slash,slash,anything)
                 DataStorage.create_json(results[0], results[1], capDatajson)
 
+                # ADD MQTT REQUEST HERE
 
                 # close window if already exists
                 if name != "":
@@ -262,6 +217,7 @@ while (cap.isOpened()):
 
                 # turn on green led for raspberry pi
                 publish.single(topic='ledStatus', payload='On', hostname='broker.hivemq.com', protocol=mqtt.MQTTv31)
+
             else:
                 print("Unknown")
 

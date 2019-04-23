@@ -31,40 +31,49 @@
 
 - Chris Villamarin
 
+## Features/Project Flow
+
+1. Captures video and retrieves individual image frames
+2. Sends images to server for processing. 
+3. Performances face detection, draws bounding boxes, aligns/crops image
+4. Sends aligned images to display on webpage
+5. Recognizes and classifies faces from trained model
+6. Sends classification and confidence to display on webpage
+7. Checks user access and sends alert to Raspberry Pi
+8. Flash green or red LED light to simulate security system
+9. Retrain or update model to include new users or other datasets
+10. Dynamically updates website as new images/classifications are made
 
 
-## Set Up
-1. Check Python requirements
-2. Download: https://drive.google.com/file/d/18bWyl_SieLtARy1tdjTIX25OAMIAVXHK/view?usp=sharing and place in `ProcessingServer/datasets` subfolder
-3. On command prompt/terminal, cd into `ProcessingServer/src` subfolder for `ProcessingServer.py`
-4. On second command prompt/terminal, cd into `CameraServer` subfolder for  `WebSocketServer.py`
-5. Download `Brackets` application and open `Web` subfolder in application
+## Getting Started
 
-## To Run
-1. Run `ProcessingServer.py`
-2. Run `WebSocketServer.py`
-3. Go to brackets open index.html from left sidebar. Click lightening icon on right side.
+### Install
+1. Check Python requirements (see requirements.txt)
+2. Install `brackets` application
 
+### Run
+1. On command prompt/terminal, cd into `ProcessingServer/src` subfolder for `ProcessingServer.py`
+2. On second command prompt/terminal, cd into `CameraServer` subfolder for  `WebSocketServer.py`
+3. On third prompt/terminal, again cd into `ProcessingServer/src` subfolder for `objectDetectionTest.py`
+4. Download `Brackets` application and open `Web` subfolder in application
+5. Run `ProcessingServer.py` (for Mac/Linux use sudo python3, for Windows, py)
+6. Run `WebSocketServer.py`
+7. Run `objectDetectionTest.py` to jumpstart python3 app (you won't need it after that)
+8. Go to brackets open index.html from left sidebar. Click lightening icon on right side.
 
+## Notes
 
-## Ignore below this
+If you are on a Mac or Linux and running the program multiple times, run `sudo lsof -i :21`, and `sudo lsof -i :5678`, collect the PIDs, and run `sudo kill -9 _PID_`
 
-#### Align Training Set (Isolate Face)
-`python3 -W ignore src/align/align_dataset_mtcnn.py datasets/train datasets/train_clean`
+### Demo Videos
 
-#### Train Classifier
-`python3 -W ignore src/classifier.py TRAIN datasets/train_clean /models/20180408-102900.pb models/classifier.pkl --batch_size 25`
+Demo to display CameraServer (laptop) interacting with WebServer to display PreprocessingServer results
 
-#### Align Test
-`python3 -W ignore src/align/align_dataset_mtcnn.py datasets/test datasets/test_clean`
+https://youtu.be/4yIFA8Dnd2I
 
-#### Classification of Test Set
-`python3 -W ignore src/classifier.py CLASSIFY datasets/test_clean models/20180408-102900.pb models/classifier.pkl`
+Demo to display CameraServer (laptop) interacting with ProcessingServer (also laptop) - which does image segmentation, then interacting with server on raspberry pi:
 
-#### To Classify Camera Inputs (separate from full networking application - only run to see classifier by itself)
-Images must be saved in `datasets/test_pi` in `Unknown` subfolder
+https://www.youtube.com/watch?v=tCcnDnl-gE0
 
-Align input: `python3 -W ignore src/align/align_dataset_mtcnn.py datasets/test_pi datasets/test_pi_clean`
-
-`python -W ignore src/classifier.py CLASSIFY datasets/test_pi_clean models/20180408-102900.pb models/classifier.pkl > output.txt`
+Note: Demos were created with multiple faces to show robustness of our project (with help from friends who allowed us to train on them). 
 
