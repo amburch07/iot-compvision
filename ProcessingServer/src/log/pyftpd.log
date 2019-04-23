@@ -5351,3 +5351,140 @@ INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=23184 <<<
 INFO:pyftpdlib:concurrency model: async
 INFO:pyftpdlib:masquerade (NAT) address: None
 INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=13088 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:52589-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52589-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52589-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-05-14.png completed=1 bytes=0 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:52603-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52589-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:52603-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52603-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-05-42.png completed=1 bytes=0 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:52682-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52603-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:52682-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52682-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-06-24.png completed=1 bytes=0 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:52694-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:52682-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:52694-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:52694-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-06-43.png completed=1 bytes=0 seconds=0.0
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=12284 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:53273-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53273-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53273-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-20-07.png completed=1 bytes=277123 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:53315-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53273-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53315-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53315-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-20-17.png completed=1 bytes=297012 seconds=0.015
+INFO:pyftpdlib:127.0.0.1:53336-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53315-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53336-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53336-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-20-27.png completed=1 bytes=296802 seconds=0.016
+INFO:pyftpdlib:127.0.0.1:53336-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53607-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53607-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53607-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-50-19.png completed=1 bytes=277699 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:53640-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53607-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53640-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53640-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-50-28.png completed=1 bytes=290492 seconds=0.016
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=16912 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:53669-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53669-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53669-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-50-39.png completed=1 bytes=285573 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:53691-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53669-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53691-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53691-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-50-48.png completed=1 bytes=294784 seconds=0.0
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=16408 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:53837-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53837-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53837-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-51-53.png completed=1 bytes=299482 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:53849-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53837-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53849-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53849-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-51-56.png completed=1 bytes=299281 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:53858-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53849-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53858-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53858-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-52-00.png completed=1 bytes=298971 seconds=0.016
+INFO:pyftpdlib:127.0.0.1:53878-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:53858-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:53878-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:53878-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-52-07.png completed=1 bytes=298185 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:53878-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:21, pid=16620 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:127.0.0.1:54476-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54476-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54476-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-57-34.png completed=1 bytes=290942 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54496-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54476-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54496-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54496-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-57-42.png completed=1 bytes=289809 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54521-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54496-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54521-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54521-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-57-52.png completed=1 bytes=288290 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54582-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54521-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54582-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54582-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-58-12.png completed=1 bytes=288897 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54599-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54582-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54599-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54599-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-58-17.png completed=1 bytes=288887 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54624-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54599-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54624-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54624-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-58-22.png completed=1 bytes=288310 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54641-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54624-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54641-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54641-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-58-27.png completed=1 bytes=289577 seconds=0.015
+INFO:pyftpdlib:127.0.0.1:54658-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54641-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54658-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54658-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-58-32.png completed=1 bytes=290958 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54676-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54658-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54676-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54676-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-58-37.png completed=1 bytes=291346 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54689-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54676-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54689-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54689-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-58-42.png completed=1 bytes=289794 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54701-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54689-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54701-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54701-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-58-47.png completed=1 bytes=289440 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54712-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54701-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54712-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54712-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-58-52.png completed=1 bytes=288852 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54726-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:54712-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:54726-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:54726-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-19-58-57.png completed=1 bytes=288906 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:54726-[webcam] Control connection timed out.
+INFO:pyftpdlib:127.0.0.1:54726-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:56328-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:56328-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:56328-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-20-11-38.png completed=1 bytes=0 seconds=0.0
+INFO:pyftpdlib:127.0.0.1:56339-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:56328-[webcam] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:56339-[webcam] USER 'webcam' logged in.
+INFO:pyftpdlib:127.0.0.1:56339-[webcam] STOR C:\Users\elkheirt\PycharmProjects\iot-final\ProcessingServer\Web\images\2019-04-22-20-11-54.png completed=1 bytes=0 seconds=0.0
