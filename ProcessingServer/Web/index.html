@@ -129,17 +129,18 @@
         var closeConnection = document.querySelector(".closeButton");
 
         sendStart.onclick = function(event) {
-            console.log("Clicked");
+            // send command to take photo
+            webSocket.send("{start}");
             var i = 0;
             interval = setInterval(function () {
                 i++;
-                console.log("Sending");
+                console.log("Sending start command...");
                 webSocket.send("{start}");
-            }, 60000);
+            }, 5000); // resend command every  seconds
         }
 
         closeConnection.onclick = function(event) {
-            clearInterval(interval);
+            clearInterval(interval); // terminate loop in .onclick function
         }
 
         webSocket.onmessage = function(event) {
